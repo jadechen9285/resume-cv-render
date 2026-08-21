@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
 cv:
   name: Jianhong Chen
-  location: Shenzhen / Hong Kong (Work Visa Required)
+  location: Bay Area, CA 
   email: jjianhongchen@gmail.com
-  phone: "+86-131-4707-7036"
+  phone: "+1-415-990-2026"
   social_networks:
     - network: LinkedIn
       username: jianhong-chen-9285jc
