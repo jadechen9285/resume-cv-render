@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: 陈建宏
+  location: 深圳 / 香港 (需工作签证)
+  email: jjianhongchen@gmail.com
+  phone: "+86-131-4707-7036"
+  social_networks:
+    - network: LinkedIn
+      username: jianhong-chen-9285jc
+  sections:
+    个人总结:
+      - "具备 6 年以上核心经验的**高级数据科学家与技术负责人**，深耕 **Agentic AI**、**供应链仿真模拟**及工业级机器学习流水线（ML Pipeline）。"
+      - "擅长本地大语言模型（LLM）基础设施构建（如 **DeepSeek**、**Qwen**）及面向 **1,000+ SKUs** 的复杂库存系统架构设计。"
+      - "精通完整软件开发生命周期（SDLC）：涵盖从原始数据工程、深度统计研究到集成模型部署与实时监控看板搭建的完整全栈流程。"
+    
+    工作经验:
+      - company: Mindray (迈瑞医疗)
+        position: "高级数据科学家 & 技术负责人"
+        location: 中国深圳
+        start_date: 2024-06
+        end_date: 2026-06
+        highlights:
+          - "组建体外诊断（IVD）供应链部门首个**数据科学与 AI 团队**，主导制定技术路线图与敏捷开发（Agile）规范。"
+          - "独立架构高保真仿真模拟框架：将生产排程周期从 **3天大幅缩短至3小时**，降低总成本达 15%，并将整体服务水平提升至 **93%**。"
+          - "基于 FastAPI 研发本地化 **'Agentic Code Critic'**，实现代码合并（PR）全自动审查，显著优化团队 CI/CD 工作流。"
+          - "整合孤立的供应链多源数据流至中心化 ETL 流水线，打通传统 ERP 系统与现代化预测模型之间的壁垒。"
+          - "基于 Streamlit 开发实时模型验证监控界面，动态追踪库存漂移与损耗计算，保障生产环境的稳定性与可靠性。"
+          - "指导初级数据科学家进行机器学习建模，优化供应链库存及配送中心（DC）物流。"
+      
+      - company: Medidata Solution Inc.
+        position: 高级数据科学家
+        location: 远程办公 (美国加州旧金山)
+        start_date: 2021-11
+        end_date: 2024-05
+        highlights:
+          - "主导基于微调大模型（LLM）和提示词工程的 **GenAI SQL 助手**，实现通过自然语言高效查询复杂临床数据。"
+          - "带领跨职能团队部署**异常检测模型**（Isolation Forest、LOF），成功替代传统陈旧的统计学方法。"
+          - "优化 **XGBoost/LightGBM** 受试者招募模型，整合 2023 纵向数据流水线以进行高精度临床试验预测。"
+          - "部署基于 Streamlit 的验证看板，在线动态监控生产环境中的 **LLM 幻觉**及模型漂移（Drift）。"
+
+      - company: NCIRE | 美国退伍军人事务部 | UCSF (加州大学旧金山分校)
+        position: 统计专家
+        location: 美国加州旧金山
+        start_date: 2020-05
+        end_date: 2021-11
+        highlights:
+          - "主导多项重大 COPD（慢性阻塞性肺病）诊断项目的数据驱动研究，在同行评审期刊发表 **2 篇高质量学术论文**。"
+          - "针对大规模 **EHR（电子健康档案）与 RCT（随机对照试验）数据集** 开展生存分析（Survival Analysis）及集成建模（随机森林、Boosting）。"
+          - "通过将传统 CSV 工作流迁移至 **MySQL** 实现数据入库自动化，将数据记录的扩展能力提升 **500倍**。"
+
+    教育背景:
+      - institution: University of California, Santa Cruz (加州大学圣克鲁兹分校)
+        area: 应用数学与统计学
+        degree: 硕士
+        location: 美国加州圣克鲁兹
+        start_date: 2017-09
+        end_date: 2019-12
+        # highlights:
+        #   - "荣获校长奖学金（Chancellor Fellowship），表彰卓越学术表现。"
+      - institution: University of California, Santa Cruz (加州大学圣克鲁兹分校)
+        area: 应用物理学（辅修电子工程）
+        degree: 学士
+        location: 美国加州圣克鲁兹
+        start_date: 2011-09
+        end_date: 2016-03
+
+    项目经验:
+      - name: "IVD 生产与库存仿真架构设计"
+        summary: "面向高 SKU 医药制造的端到端仿真引擎及数据流水线。"
+        highlights:
+          - "构建自动化 ETL 流水线，将纯手工 Excel 追踪数据迁移至中心化 **SAP HANA** 数据库，并集成 Tableau 进行可视化展示。"
+          - "开发基于**蒙特卡洛（Monte Carlo）方法**的离散事件仿真框架，对需求不确定性进行精准建模。"
+          - "使用 Python dataclasses 重构库存核心逻辑，使执行速度提升 **20%** 并大幅增强代码可维护性。"
+      - name: "企业级 Agentic CI/CD 平台"
+        summary: "面向自动化质量控制的本地优先 AI 编排器。"
+        highlights:
+          - "利用 **vLLM** 及定制量化技术，优化在 **4x NVIDIA L20 GPU** 集群上的本地推理性能。"
+          - "实现 Webhook 服务，与内部部署的 Gitea 实例完成无缝集成。"
+
+    领导力与软技能:
+      - label: "团队建设与人才培养"
+        details: "技术指导、1对1结对编程、以及面向数据科学岗位的技术面试流程设计。"
+      - label: "跨职能利益相关者管理"
+        details: "将复杂的机器学习模型与概念转化为面向管理层及业务团队的可执行商业战略与技术路线图。"
+      - label: "敏捷团队管理"
+        details: "优化迭代计划（Sprint Planning）与成果演示（Demo）会议，在保持高技术透明度的同时，充分保障开发者的自主权。"
+
+    技术技能:
+      - label: 人工智能与机器学习
+        details: "大模型微调 (DeepSeek, Qwen), Agent 框架, RAG, 时间序列预测, 异常检测, 蒙特卡洛方法。"
+      - label: 工程与运维
+        details: "Python (uv, FastAPI, Streamlit), SQL (Snowflake, Postgres, SAP), Docker, CI/CD, Git, ETL 设计。"
+      - label: 基础设施
+        details: "本地大模型运维 (Ollama, vLLM), AWS (EC2, S3, Step Functions)。"
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 2cm
+    bottom_margin: 2cm
+    left_margin: 2cm
+    right_margin: 2cm
+  entries:
+    vertical_space_between_entries: 1.5em
+
+rendercv_settings:
+  bold_keywords: ["Python", "FastAPI", "LLM", "SQL", "Simulation", "XGBoost", "DeepSeek", "Qwen", "vLLM", "L20", "Monte Carlo", "SAP", "Gitea", "HANA", "Streamlit", "LightGBM"]

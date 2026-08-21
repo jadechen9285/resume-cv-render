@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: Jianhong Chen
+  location: Shenzhen / Hong Kong (Work Visa Required)
+  email: jjianhongchen@gmail.com
+  phone: "+86-131-4707-7036"
+  social_networks:
+    - network: LinkedIn
+      username: jianhong-chen-9285jc
+  sections:
+    summary:
+      - "Senior Data Scientist & Tech Lead with 6+ years of experience across **Agentic AI**, **supply chain** simulation, and production-grade ML pipelines."
+      - "Specialist in deploying local LLM infrastructure (**DeepSeek**, **Qwen**) and architecting complex inventory systems for **1,000+ SKUs**."
+      - "Full-SDLC expertise: from raw data engineering and statistical research to deploying ensemble models, simulation engines, and real-time monitoring dashboards."
+
+    experience:
+      - company: Mindray
+        position: "Senior Data Scientist & Tech Lead"
+        location: ShenZhen, China
+        start_date: 2024-06
+        end_date: 2026-06
+        highlights:
+          - "Established and grew the first **Data Science & AI team** for the IVD Supply Chain department from the ground up, introducing Agile workflows and technical roadmaps."
+          - "Architected production ML pipelines bridging legacy ERP systems with modern forecasting models to optimize enterprise-wide supply chain logistics."
+          - "Developed Streamlit-based monitoring interfaces for real-time model validation, tracking inventory drift and loss calculations for production reliability."
+          - "Mentored 2 fresh-graduate junior data scientists in machine learning modeling, code quality standards, and distribution center logistics optimization."
+      
+      - company: Medidata Solutions Inc.
+        position: Senior Data Scientist
+        location: Remote (San Francisco, CA)
+        start_date: 2021-11
+        end_date: 2024-05
+        highlights:
+          - "Led a cross-functional team to deploy **Anomaly Detection models** (Isolation Forest, LOF), replacing legacy statistical methods for clinical data quality control."
+          - "Optimized **XGBoost/LightGBM** enrollment models, integrating longitudinal data pipelines for clinical trial forecasting."
+          - "Deployed validation dashboards to track model variance, LLM hallucinations, and behavior drift in production environments."
+
+      - company: NCIRE | US Dept. of Veteran Affairs | UCSF
+        position: Statistician
+        location: San Francisco, CA
+        start_date: 2020-05
+        end_date: 2021-11
+        highlights:
+          - "Led data-driven statistical research for major COPD diagnosis projects, resulting in **2 peer-reviewed journal publications**."
+          - "Executed survival analysis and ensemble modeling (Random Forest, Boosting) on large-scale **EHR and RCT datasets**."
+          - "Automated experimental data ingestion by migrating CSV workflows to **MySQL**, increasing pipeline record scalability **500x**."
+
+    projects:
+      - name: "High-Fidelity Discrete-Event Simulation Framework"
+        summary: "Tech Lead & Founding Developer | Advanced statistical framework built to model demand uncertainty and forecast operational success."
+        highlights:
+          - "Engineered an end-to-end simulation engine using Python and SQL, leveraging historical inventory, demand, product lifecycle, and shelf-life data."
+          - "Optimized hyperparameters via grid search and Bayesian optimization, incorporating Monte Carlo (MC) methods to evaluate quasi-experimental risk profiles and boost model robustness."
+          - "Deployed a Dockerized backend and Streamlit frontend with Linux Cron ETL pipelines; **reduced planning cycles from 3 days to 3 hours**, cut total costs by **15%**, and increased service levels from 85% to **93%**."
+
+      - name: "Git Agentic PR Reviewer & CI/CD Workflow Orchestrator"
+        summary: "Sole Developer | Local orchestrator designed to automate code evaluation and maintain pipeline quality."
+        highlights:
+          - "Architected a local-first LLM inference service hosting Qwen-2.5-Coder-72B on a 4x NVIDIA L20 GPU cluster using **vLLM**, Pydantic schema validation, and **FastAPI**."
+          - "Integrated local Gitea Webhook services via Docker to automate code review (PR Critic) and streamline team CI/CD workflows."
+
+      - name: "GenAI SQL Assistant for Clinical Querying"
+        summary: "Algorithm & Backend Developer | Natural language interface for querying complex clinical trial datasets."
+        highlights:
+          - "Spearheaded prompt engineering strategies and evaluation frameworks on AWS to convert natural language queries into precise, executable SQL."
+          - "Conducted iterative benchmarking on early-stage AI agent workflows to minimize hallucination rates and improve schema mapping accuracy."
+
+      - name: "Statistical Modeling for Adverse Event (AE) Assessment"
+        summary: "Sole Developer | Production statistical pipeline for clinical trial adverse event rates."
+        highlights:
+          - "Applied rigorous statistical modeling on observed adverse event data to compute confidence intervals and evaluate statistical significance."
+          - "Determined whether observed AE spikes were statistically significant drug-induced risks versus random baseline noise."
+
+    education:
+      - institution: University of California, Santa Cruz
+        area: Applied Mathematics and Statistics
+        degree: MS
+        location: Santa Cruz, CA
+        start_date: 2017-09
+        end_date: 2019-12
+        highlights:
+          - "Recipient of the Chancellor Fellowship for academic excellence."
+      - institution: University of California, Santa Cruz
+        area: Applied Physics (Minor in EE)
+        degree: BS
+        location: Santa Cruz, CA
+        start_date: 2011-09
+        end_date: 2016-03
+
+    leadership_and_soft_skills:
+      - label: "Team Development & Leadership"
+        details: "Established first DS team from ground up in traditional supply chain; technical mentoring, 1-on-1 pair coding, and technical interview design."
+      - label: "Stakeholder Management"
+        details: "Translating complex ML concepts into actionable business roadmaps for executives; translating business logic into technical requirements."
+      - label: "Agile Leadership"
+        details: "Introduced Agile/Scrum methodologies to non-agile traditional teams; guided initial Scrum Masters; optimized sprint planning and demos."
+
+
+    skills:
+      - label: "AI & LLM"
+        details: "LLM Fine-tuning (DeepSeek, Qwen), Agentic Frameworks, RAG, Prompt Engineering, Tool Calling."
+      - label: "ML & DL Algorithms"
+        details: "Forecasting (ARIMA, Prophet, LSTM), XGBoost, LightGBM, Random Forest, Anomaly Detection, Linear Regression, Clustering (K-Means, DBSCAN, Hierarchical), Dimensionality Reduction (PCA, UMAP, t-SNE)."
+      - label: "Optimization & Simulation"
+        details: "Discrete-Event Simulation, Survival Analysis, Monte Carlo (MC) Simulation, Mixed Integer Linear Programming (MILP)."
+      - label: "Engineering & Ops"
+        details: "Python (uv, FastAPI, Streamlit), SQL (Snowflake, Postgres, SAP), Docker, CI/CD, Git, ETL Pipeline Design."
+      - label: "Infrastructure"
+        details: "Local LLM Ops (Ollama, vLLM), AWS (EC2, S3, Step Functions)."
+
+    Languages:
+      - label: "English"
+        details: "Professional Proficiency"
+      - label: "Mandarin"
+        details: "Professional Proficiency"
+      - label: "Cantonese"
+        details: "Native"
+
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.8cm
+    bottom_margin: 1.8cm
+    left_margin: 1.8cm
+    right_margin: 1.8cm
+  entries:
+    vertical_space_between_entries: 1.2em
+
+rendercv_settings:
+  bold_keywords: ["Python", "FastAPI", "LLM", "SQL", "Simulation", "XGBoost", "DeepSeek", "Qwen", "vLLM", "L20", "Monte Carlo", "SAP", "Streamlit", "LightGBM", "Docker"]
