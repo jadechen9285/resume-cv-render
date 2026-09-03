@@ -1,3 +1,18 @@
+# work Experience 
+    - company: Medidata Solutions Inc.
+    position: Senior Data Scientist
+    location: Remote (CA)
+    start_date: 2021-11
+    end_date: 2024-05
+    highlights:
+        - "Led a cross-functional team refactoring old R codes of **Anomaly Detection models** into Python and eliminate codebased by ~25%. At the same time spearhead research newer version of the algo such as  (Isolation Forest, LOF) for automated data quality control."
+        - "Updated and Maintained **XGBoost/LightGBM** enrollment models and longitudinal data pipelines for clinical trial forecasting."
+        - "Engaged in LLM exploration on various applications such as SQL generation."
+
+
+
+
+
 # Skills
 ## Soft
     - Team Development & Leadership
