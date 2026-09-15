@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
 cv:
   name: Jianhong Chen
-  location: Bay Area, CA 
+  location: Bay Area, CA | U.S. Citizen
   email: jjianhongchen@gmail.com
   phone: "+1-415-990-2026"
   social_networks:
@@ -12,9 +12,9 @@ cv:
       - "Senior Data Scientist & Tech Lead with 6+ years bridging raw data engineering and statistical research to build production ML pipelines, Agentic AI infrastructure, and high-fidelity simulation engines for enterprise logistics and clinical operations."
 
     experience:
-      - company: Mindray
+      - company: Mindray (Global MedTech Enterprise, $30B+ Market Cap)
         position: "Senior Data Scientist & Tech Lead"
-        location: ShenZhen, China
+        location: Remote (Bay Area, CA)
         start_date: 2024-06
         end_date: 2026-06
         highlights:

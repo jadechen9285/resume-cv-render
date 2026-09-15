@@ -1,15 +1,35 @@
 # work Experience 
-    - company: Medidata Solutions Inc.
-    position: Senior Data Scientist
+  - company: Mindray
+    position: "Senior Data Scientist & Tech Lead"
+    location: ShenZhen, China
+    start_date: 2024-06
+    end_date: 2026-06
+    highlights:
+      - "Established the IVD Supply Chain DS team, defining technical roadmaps and managing end-to-end SDLC."
+      - "Architected ML transformations to optimize enterprise supply chain S&OP for 4,000+ SKUs."
+      - "Built Streamlit interfaces for real-time model validation, tracking inventory drift and operational constraints."
+      - "Mentored junior data scientists on agile development, code quality standards, and evaluating operational uncertainty."
+  
+  - company: Medidata Solutions Inc.
+    position: Data Scientist | Senior Data Scientist
     location: Remote (CA)
     start_date: 2021-11
     end_date: 2024-05
     highlights:
-        - "Led a cross-functional team refactoring old R codes of **Anomaly Detection models** into Python and eliminate codebased by ~25%. At the same time spearhead research newer version of the algo such as  (Isolation Forest, LOF) for automated data quality control."
-        - "Updated and Maintained **XGBoost/LightGBM** enrollment models and longitudinal data pipelines for clinical trial forecasting."
-        - "Engaged in LLM exploration on various applications such as SQL generation."
+      - "Owned anomaly detection models, detecting and mitigating data quality issues in clinical environments."
+      - "Led the migration of legacy R anomaly detection pipelines to Python, reducing pipeline execution time by 25%."
+      - "Developed statistical AE models, applying rigorous causal inference to evaluate partially observed clinical data."
 
-
+  - company: NCIRE | US Dept. of Veteran Affairs | UCSF
+    position: Statistician
+    location: Remote (CA)
+    start_date: 2020-05
+    end_date: 2021-11
+    highlights:
+      - "Conducted rigorous statistical inference on EHR to identify and map features that influence COPD progression."
+      - "Led statistical research for COPD diagnosis, executing survival analysis and ensemble modeling (**2 publications**)."
+      - "Automated experimental data ingestion by migrating CSV workflows to **MySQL**, scaling pipeline capacity **500x**."
+      
 
 
 

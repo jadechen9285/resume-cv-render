@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: Jianhong Chen
+  location: Shenzhen | Work Visa Required
+  email: jjianhongchen@gmail.com
+  phone: "+86-131-4707-7036"
+  social_networks:
+    - network: LinkedIn
+      username: jianhong-chen-9285jc
+  sections:
+    summary:
+      - "Senior Data Scientist and ML Tech Lead with 6+ years building production ML, statistical modeling, and time-series anomaly detection systems across healthcare research and medical device enterprise operations."
+    
+    experience:
+      - company: Mindray
+        position: "Senior Data Scientist & Tech Lead"
+        location: ShenZhen, China
+        start_date: 2024-06
+        end_date: 2026-06
+        highlights:
+          - "Established the IVD Supply Chain DS team, defining technical roadmaps and managing end-to-end SDLC."
+          - "Architected ML transformations to optimize enterprise supply chain S&OP for 4,000+ SKUs."
+          - "Built Streamlit interfaces for real-time model validation, tracking inventory drift and operational constraints."
+          - "Mentored junior data scientists on agile development, code quality standards, and evaluating operational uncertainty."
+      
+      - company: Medidata Solutions Inc.
+        position: Data Scientist | Senior Data Scientist
+        location: Remote (CA)
+        start_date: 2021-11
+        end_date: 2024-05
+        highlights:
+          - "Owned anomaly detection models, detecting and mitigating data quality issues in clinical environments."
+          - "Led the migration of legacy R anomaly detection pipelines to Python, reducing pipeline execution time by 25%."
+          - "Developed statistical AE models, applying rigorous causal inference to evaluate partially observed clinical data."
+
+      - company: NCIRE | US Dept. of Veteran Affairs | UCSF
+        position: Statistician
+        location: Remote (CA)
+        start_date: 2020-05
+        end_date: 2021-11
+        highlights:
+          - "Conducted rigorous statistical inference on EHR to identify and map features that influence COPD progression."
+          - "Led statistical research for COPD diagnosis, executing survival analysis and ensemble modeling (**2 publications**)."
+          - "Automated experimental data ingestion by migrating CSV workflows to **MySQL**, scaling pipeline capacity **500x**."
+          
+    projects:
+      - name: "Enterprise Discrete-Event Simulation Framework (Mindray)"
+        summary: "Lead Developer | Statistical framework modeling demand uncertainty."
+        highlights:
+          - "Engineered an end-to-end Python simulation backend modeling forecasting uncertainty via **Monte Carlo** method."
+          - "Translated ambiguous business constraints into actionable operational models, reducing planning cycles from **3 days to 3 hours**, cut costs by **15%**, and increased service to **93%**."
+
+      - name: "Enterprise Agentic PR Reviewer & CI/CD Orchestrator (Mindray)"
+        summary: "Tech Lead | Enterprise AI orchestrator deployed to automate code evaluation."
+        highlights:
+          - "Architected a local LLM inference service hosting Qwen-2.5-Coder-72B on a corporate 4x NVIDIA L20 cluster using **vLLM** and **FastAPI**."
+          - "Integrated Gitea Webhooks via Docker to automate code review schemas and streamline CI/CD workflows."
+    
+    education:
+      - institution: University of California, Santa Cruz
+        area: Applied Mathematics and Statistics
+        degree: MS
+        location: Santa Cruz, CA
+        end_date: 2019-12
+      - institution: University of California, Santa Cruz
+        area: Applied Physics
+        degree: BS
+        location: Santa Cruz, CA
+        end_date: 2016-03
+
+    skills:
+          - label: "Healthcare & Statistical Inference"
+            details: "Time-Series Analysis, Anomaly Detection, Survival Analysis, Experimental Design, Uncertainty Quantification, Real-World Data (EHR)."
+          - label: "Data Science & ML"
+            details: "Machine Learning, Generative AI (vLLM, LLMs), Predictive Modeling, XGBoost, Causal Inference."
+          - label: "Engineering & Programming"
+            details: "Python, R, SQL (Snowflake, Postgres), Streamlit, FastAPI, Docker, AWS, Git."
+
+design:
+  theme: sb2nov
+  page:
+    size: us-letter
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.0cm
+    right_margin: 1.0cm
+  entries:
+    vertical_space_between_entries: 1.2em
+
+rendercv_settings:
+  bold_keywords: ["Python", "SQL", "R", "Time-Series", "Anomaly Detection", "Streamlit", "Statistical Inference", "vLLM"]
