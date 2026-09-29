@@ -7,58 +7,76 @@ cv:
   social_networks:
     - network: LinkedIn
       username: jianhong-chen-9285jc
+    # - network: GitHub
+    #   username: jadechen9285
+
   sections:
     summary:
-      - "Senior Data Scientist and Tech Lead with 6+ years of experience building and deploying end-to-end ML systems. Expert in translating ambiguous user problems into scalable ML models (XGBoost, Deep Learning), with robust backend implementations (FastAPI, Python) in production."
+      - "Senior Data Scientist & Tech Lead with 6+ years building production ML, optimization, simulation, and agentic AI systems that drive measurable business outcomes across enterprise operations."
+
+    skills:
+      - label: "Programming Languages"
+        details: "Python, SQL, R"
+      - label: "ML & Statistics"
+        details: "Time-Series Forecasting, XGBoost, Random Forest, Anomaly Detection, Survival Analysis"
+      - label: "Optimization & Simulation"
+        details: "Monte Carlo Methods, Discrete-Event Simulation, Constrained Optimization, SciPy"
+      - label: "LLM & Agentic Systems"
+        details: "LLM Fine-Tuning, Agentic Systems, RAG, Prompt Engineering, Qwen, vLLM, Ollama"
+      - label: "Engineering & Cloud"
+        details: "Docker, CI/CD, Git, FastAPI, AWS, Snowflake, MySQL, Linux, Streamlit"
+
     experience:
-      - company: Mindray (Global MedTech Enterprise, $30B+ Market Cap)
+      - company: Mindray (Global MedTech Enterprise)
         position: "Senior Data Scientist & Tech Lead"
-        location: Hybrid (SF, CA)
+        location: Remote (Bay Area, CA)
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Acted as an internal AI consultant for enterprise leadership, framing ambiguous operational questions into rigorous analytical strategies and technical roadmaps."
-          - "Rapidly prototyped computational solutions and built interactive Streamlit dashboards to track inventory management."
-          - "Led and grew a data science team, setting the technical bar and mentoring on agile SDLC and coding best practices."
-          - "Architected ML pipeline transformations to optimize enterprise supply chain S&OP for 4,000+ SKUs."
+          - "Led a 3-person data science team in defining the enterprise ML roadmap, translating ambiguous supply chain constraints into actionable AI product strategies for executive leadership."
+          - "Modeled inventory uncertainty by engineering a stochastic discrete-event simulation framework in Python and Docker, reducing total S&OP costs by $200K (15%)."
+          - "Forecasted demand variability across 4,000+ SKUs using ARIMA, Prophet, and LSTM models, improving service levels from 85% to 93% and stabilizing global fulfillment."
+          - "Built Streamlit decision-support interfaces to operationalize simulation and forecasting outputs for supply chain stakeholders, cutting monthly planning cycles from 3 days to 3 hours."
+          - "Architected and deployed a local agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, reducing manual PR review time by ~80%."
 
       - company: Medidata Solutions Inc.
         position: Senior Data Scientist
-        location: Remote (CA)
+        location: Remote (Bay Area, CA)
         start_date: 2021-11
         end_date: 2024-05
         highlights:
-          - "Engineered anomaly detection models to detect and mitigate data quality issues in clinical environments."
-          - "Led the migration of legacy R anomaly detection pipelines to Python, reducing execution time by 25%."
-          - "Developed statistical models, applying rigorous causal inference to evaluate partially observed clinical data."
+          - "Directed a 3-person team to resolve clinical data bottlenecks by stabilizing legacy R production modules and migrating pipelines to Python, reducing execution time by 25% and improving downstream data reliability."
+          - "Strengthened clinical trial anomaly detection by engineering Key Risk Indicators (KRIs) using Poisson modeling, improving risk detection accuracy by 13% to support trial oversight."
+          - "Forecasted clinical study site performance by retraining LightGBM models and refactoring workflow code, reducing operational latency by 6% to improve global trial resource allocation."
+          - "Co-developed a natural-language-to-SQL AI assistant on AWS using fine-tuned LLMs and prompt engineering, reducing query hallucination rate by 10% during early-stage agent development."
 
       - company: NCIRE | US Dept. of Veteran Affairs | UCSF
         position: Statistician
-        location: Remote (CA)
+        location: Remote (Bay Area, CA)
         start_date: 2020-05
         end_date: 2021-11
         highlights:
-          - "Led statistical research and survival analysis on EHR data to map features driving COPD progression (**2 publications**)."
-          - "Automated experimental data ingestion by migrating CSV workflows to **MySQL**, scaling pipeline capacity **500x**."
-          
-    projects:
-      - name: "E-Commerce PPC Analytics & Margin Optimization (Individual Project)"
-        summary: "Independent Developer | E-commerce marketing intelligence and ad spend efficiency."
-        highlights:
-          - "Built analytics tools to extract actionable business insights (zero-converting terms) from raw PPC campaign data."
-          - "Analyzed ad structures to uncover term cannibalization and structural waste, applying constrained optimization to optimize CPC and maximize ad spend ROI."
-      
-      - name: "Enterprise Discrete-Event Simulation & Bayesian Optimization (Mindray)"
-        summary: "Tech Lead | Statistical framework modeling operational uncertainty."
-        highlights:
-          - "Engineered an end-to-end simulation backend optimizing robust S&OP inventory management via MC methods."
-          - "Translated ambiguous constraints into actionable decisions, reducing planning cycles to 3 hours, cutting costs by 15%, and increasing service to 93%."
-      
-      # - name: "Enterprise Agentic PR Reviewer & CI/CD Orchestrator (Mindray)"
-      #   summary: "Tech Lead | AI orchestrator deployed to automate code evaluation."
-      #   highlights:
-      #     - "Architected a local LLM inference service hosting Qwen-2.5-Coder-72B on a corporate 4x NVIDIA L20 cluster using **vLLM** and **FastAPI**."
-      #     - "Integrated Gitea Webhooks via Docker to automate code review schemas and streamline CI/CD workflows."
+          - "Quantified COPD disease progression risk by executing survival analysis and regression on complex EHR data, securing 2 peer-reviewed publications that mapped critical clinical features."
+          - "Eliminated experimental data bottlenecks by automating legacy CSV ingestion workflows into MySQL databases, scaling system pipeline capacity by 500x to accelerate research velocity."
+
+    # projects:
+    #   # - name: "E-Commerce PPC Analytics & Margin Optimization (Individual Project)"
+    #   #   summary: "Independent Developer | E-commerce marketing intelligence and ad spend efficiency."
+    #   #   highlights:
+    #   #     - "Built analytics tools to extract actionable business insights from raw consumer data, identifying zero-converting terms and mapping buyer intent."
+    #   #     - "Analyzed ad structures to uncover term cannibalization and structural waste, applying constrained optimization to optimize CPC and maximize ad spend ROI."
+
+    #   - name: "Enterprise Discrete-Event Simulation & Bayesian Optimization (Mindray)"
+    #     summary: "Tech Lead | Statistical framework modeling operational uncertainty."
+    #     highlights:
+    #       - "Engineered an end-to-end simulation backend optimizing robust S&OP inventory management via MC methods."
+    #       - "Translated ambiguous constraints into actionable decisions, reducing planning cycles to 3 hours, cutting costs by 15%, and increasing service to 93%."
+
+    #   - name: "Enterprise Agentic PR Reviewer & CI/CD Orchestrator (Mindray)"
+    #     summary: "Tech Lead | AI orchestrator deployed to automate code evaluation."
+    #     highlights:
+    #       - "Architected a local LLM inference service hosting Qwen-2.5-Coder-72B on a corporate 4x NVIDIA L20 cluster using **vLLM** and **FastAPI**."
+    #       - "Integrated Gitea Webhooks via Docker to automate code review schemas and streamline CI/CD workflows."
 
       # - name: "Enterprise GenAI SQL Assistant & AI/ML R&D (Medidata)"
       #   summary: "ML Engineer | Natural language interface and evaluation frameworks."
@@ -78,12 +96,6 @@ cv:
         location: Santa Cruz, CA
         end_date: 2016-03
 
-    skills:
-      - label: "Machine Learning & AI"
-        details: "Time-Series Forecasting, XGBoost, PyTorch, LLMs (vLLM), Feature Engineering."
-      - label: "Engineering & Backend"
-        details: "Python, SQL, FastAPI, Docker, AWS, Streamlit, Git."
-
 
 design:
   theme: sb2nov
@@ -97,4 +109,14 @@ design:
     vertical_space_between_entries: 1.0em
 
 rendercv_settings:
-  bold_keywords: ["Python", "SQL", "XGBoost", "PyTorch", "FastAPI", "Discovery", "Personalization", "Backend"]
+    bold_keywords:
+    - "Python"
+    - "SQL"
+    - "XGBoost"
+    - "LightGBM"
+    - "Time-Series Forecasting"
+    - "Discrete-Event Simulation"
+    - "Constrained Optimization"
+    - "LLM Fine-Tuning"
+    - "Qwen-2.5-Coder-72B"
+    - "vLLM"

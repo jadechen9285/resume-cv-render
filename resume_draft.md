@@ -1,3 +1,44 @@
+
+# Skills
+## Soft
+    - Team Development & Leadership
+        -- Establish & Grow First DS team in traditional supply chain from ground up 
+        -- Technical mentoring, 1-on-1 pair coding, and technical interview design for data science roles
+    - "Stakeholder Management"
+        -- "Translating complex ML concepts into actionable business strategy and roadmap for executives."
+        -- Communicate Model Resutls and Ideas to non-technical co-workers
+        -- Convert business logics into achievable technical features & projects
+    - "Agile Leadership"
+        -- Establish the idea of agile workflow in tradiational industries 
+        -- Educate and influence non-agile project management to team & guide our first agle project manager & scrum master
+        -- Optimizing sprint planning and demo meetings to maintain technical transparency and developer autonomy
+## technical
+    - Programming Language: 
+        proficient: Python, R, and SQL
+    - Tech Stack: Docker, Git, vLLMs, Snowflake, CI/CD, Linux, LLMs
+
+    <!-- - AI & LLM 
+        -- LLM Fine-tuning (DeepSeek, Qwen), Agentic Frameworks, RAG, Prompt Engineering 
+    - ML & DL 
+        Forecasting (ARIMA, Prophet, LSTM), XGBoost, Random Forest, Anomaly Detection, Monte Carlo(MC) Method, General Linear Regression, Clustering (Kmeans, Density base, hieriachical), Dimensional Redcution (PCA, UMAP, tSNE)
+    - Engineering & Ops
+        -- "Python (uv, FastAPI, Streamlit), SQL (Snowflake, Postgres, SAP), Docker, CI/CD, Git, ETL Design."
+    - Infrastructure
+        -- "Local LLM Ops (Ollama, vLLM), AWS (EC2, S3, Step Functions)." -->
+
+## languages
+    - English (Professional); 
+    - Mandarians (Professional); 
+    - Cantonese(native)
+
+
+
+- "Owned the technical ML roadmap and directed AI strategy, acting as a hands-on builder to write production code, deploy models, and run rigorous live experiments."
+- "Rapidly prototyped computational solutions and built interactive Streamlit dashboards to track inventory management."
+- "Led and grew a data science team, setting the technical bar and mentoring on agile SDLC and coding best practices."
+- "Architected ML pipeline transformations to optimize enterprise supply chain S&OP for 4,000+ SKUs."
+
+
 # work Experience 
   - company: Mindray
     position: "Senior Data Scientist & Tech Lead"
@@ -30,37 +71,6 @@
       - "Led statistical research for COPD diagnosis, executing survival analysis and ensemble modeling (**2 publications**)."
       - "Automated experimental data ingestion by migrating CSV workflows to **MySQL**, scaling pipeline capacity **500x**."
       
-
-
-
-# Skills
-## Soft
-    - Team Development & Leadership
-        -- Establish & Grow First DS team in traditional supply chain from ground up 
-        -- Technical mentoring, 1-on-1 pair coding, and technical interview design for data science roles
-    - "Stakeholder Management"
-        -- "Translating complex ML concepts into actionable business strategy and roadmap for executives."
-        -- Communicate Model Resutls and Ideas to non-technical co-workers
-        -- Convert business logics into achievable technical features & projects
-    - "Agile Leadership"
-        -- Establish the idea of agile workflow in tradiational industries 
-        -- Educate and influence non-agile project management to team & guide our first agle project manager & scrum master
-        -- Optimizing sprint planning and demo meetings to maintain technical transparency and developer autonomy
-## technical
-    - AI & LLM 
-        -- LLM Fine-tuning (DeepSeek, Qwen), Agentic Frameworks, RAG, Prompt Engineering 
-    - ML & DL 
-        Forecasting (ARIMA, Prophet, LSTM), XGBoost, Random Forest, Anomaly Detection, Monte Carlo(MC) Method, General Linear Regression, Clustering (Kmeans, Density base, hieriachical), Dimensional Redcution (PCA, UMAP, tSNE)
-    - Engineering & Ops
-        -- "Python (uv, FastAPI, Streamlit), SQL (Snowflake, Postgres, SAP), Docker, CI/CD, Git, ETL Design."
-    - Infrastructure
-        -- "Local LLM Ops (Ollama, vLLM), AWS (EC2, S3, Step Functions)."
-
-## languages
-    - English (Professional); 
-    - Mandarians (Professional); 
-    - Cantonese(native)
-
 
 
 
@@ -104,3 +114,10 @@
         - "Apply Statistcal modeling on observed AE data, and compute the Confidence interver of the given data"
         - assecc the stastical significant of the event to determint if the Adverse event was cause by mistake or just real instance
 
+
+5.       
+# - name: "E-Commerce PPC Analytics & Margin Optimization (Individual Project)"
+#   summary: "Independent Developer | E-commerce marketing intelligence and ad spend efficiency."
+#   highlights:
+#     - "Built analytics tools to extract actionable business insights from raw consumer data, identifying zero-converting terms and mapping buyer intent."
+#     - "Analyzed ad structures to uncover term cannibalization and structural waste, applying constrained optimization to optimize CPC and maximize ad spend ROI."
