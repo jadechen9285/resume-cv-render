@@ -12,3 +12,6 @@ wheels/
 
 # Render Output
 rendercv_output
+
+# mac 
+.DS_Store

@@ -12,22 +12,20 @@ cv:
 
   sections:
     summary:
-      - "Senior Data Scientist & Tech Lead with 6+ years building production ML, optimization, simulation, and agentic AI systems that drive measurable business outcomes across enterprise operations."
+      - "Senior Data Scientist with an MS in Applied Math and 6+ years of experience in decision science, predictive modeling, and online experimentation. Proven track record of applying causal inference, supervised/unsupervised ML, and Gen AI pipelines to complex business problems, translating advanced analytics into actionable recommendations through compelling data storytelling."
 
     skills:
-      - label: "Programming Languages"
-        details: "Python, SQL, R"
-      - label: "ML & Statistics"
-        details: "Time-Series Forecasting, XGBoost, Random Forest, Anomaly Detection, Survival Analysis"
-      - label: "Optimization & Simulation"
-        details: "Monte Carlo Methods, Discrete-Event Simulation, Constrained Optimization, SciPy"
-      - label: "LLM & Agentic Systems"
-        details: "LLM Fine-Tuning, Agentic Systems, RAG, Prompt Engineering, Qwen, vLLM, Ollama"
-      - label: "Engineering & Cloud"
-        details: "Docker, CI/CD, Git, FastAPI, AWS, Snowflake, MySQL, Linux, Streamlit"
-
+      - label: "Decision Science & ML"
+        details: "Experimentation (A/B Testing), Causal Inference, Supervised & Unsupervised ML, XGBoost"
+      - label: "Gen AI & Advanced Analytics"
+        details: "Gen AI Pipelines, LLM Fine-Tuning, Qwen, vLLM, Statistical Modeling, Predictive Modeling"
+      - label: "Data Engineering & Workflow"
+        details: "Python, Complex SQL Queries, Airflow, Git, Docker, Snowflake, BigQuery, CI/CD"
+      - label: "Data Storytelling"
+        details: "Actionable Insights, Hypothesis Formulation, Dashboarding (Streamlit), Stakeholder Presentations"
+    
     experience:
-      - company: Mindray (Global MedTech Enterprise)
+      - company: Mindray
         position: "Senior Data Scientist & Tech Lead"
         location: Remote (Bay Area, CA)
         start_date: 2024-06
@@ -101,22 +99,23 @@ design:
   theme: sb2nov
   page:
     size: us-letter
-    top_margin: 1.0cm
-    bottom_margin: 1.0cm
-    left_margin: 1.0cm
-    right_margin: 1.0cm
-  entries:
-    vertical_space_between_entries: 1.0em
+    top_margin: 0.8cm
+    bottom_margin: 0.8cm
+    left_margin: 0.8cm
+    right_margin: 0.8cm
+    show_top_note: false
+    show_footer: false
+  # font_size:
+  #   body: 10pt
 
-rendercv_settings:
-    bold_keywords:
+settings:
+  bold_keywords:
     - "Python"
     - "SQL"
-    - "XGBoost"
-    - "LightGBM"
-    - "Time-Series Forecasting"
-    - "Discrete-Event Simulation"
-    - "Constrained Optimization"
-    - "LLM Fine-Tuning"
-    - "Qwen-2.5-Coder-72B"
-    - "vLLM"
+    - "Airflow"
+    - "Git"
+    - "Experimentation"
+    - "Causal Inference"
+    - "Gen AI Pipelines"
+    - "Actionable Insights"
+    - "Predictive Models"
