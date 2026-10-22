@@ -51,7 +51,7 @@ cv:
 
     skills:
       - label: "Programming Languages"
-        details: "Python, SQL, R"
+        details: "Python, SQL, R, Claude Code"
       - label: "ML & Statistics"
         details: "Time-Series Forecasting, XGBoost, Random Forest, Anomaly Detection, Survival Analysis"
       - label: "Optimization & Simulation"
@@ -64,7 +64,7 @@ cv:
     experience:
       - company: Mindray
         position: "Senior Data Scientist & Tech Lead"
-        location: Remote (Bay Area, CA)
+        location: Shenzhen, China
         start_date: 2024-06
         end_date: 2026-06
         highlights:
@@ -75,7 +75,7 @@ cv:
           - "Architected and deployed a local agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, reducing manual PR review time by ~80%."
 
       - company: Medidata Solutions Inc.
-        position: Senior Data Scientist
+        position: Data Scientist → Senior Data Scientist
         location: Remote (Bay Area, CA)
         start_date: 2021-11
         end_date: 2024-05
@@ -110,7 +110,7 @@ cv:
     theme: sb2nov
     page:
       size: us-letter
-      top_margin: 0.8cm
+      top_margin: 1.0cm
       bottom_margin: 1.0cm
       left_margin: 1.0cm
       right_margin: 1.0cm
@@ -317,6 +317,8 @@ Break it down into:
 
 Do NOT inflate the score.
 
+IF Score is below 50, IMMEDIATE STOP and TELL me NOT A GOOD MATCH! NO NEED TO WASTE TIME for the outputting resuem yaml. 
+
 ---
 
 # 10. CRITICAL GAPS
@@ -383,6 +385,8 @@ If an important metric is missing, write:
 
 rather than inventing one.
 
+TRY TO use different verbs for each bullet points, avoid repeating words suchas `Built` in multiple bullet points.
+
 ---
 
 # 13. SENIORITY CHECK
@@ -422,6 +426,8 @@ The YAML must:
 * Be directly usable as RenderCV input
 * Avoid comments unless necessary
 * Avoid unsupported claims
+* Keep the summary section concise at max in 3 lines
+* Alwasy check if exceed the one-page limit
 
 If I do not specify RenderCV, return a clean text resume.
 

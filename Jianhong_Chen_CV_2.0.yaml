@@ -102,9 +102,9 @@ design:
   page:
     size: us-letter
     top_margin: 0.8cm
-    bottom_margin: 1.0cm
-    left_margin: 1.0cm
-    right_margin: 1.0cm
+    bottom_margin: 0.8cm
+    left_margin: 0.8cm
+    right_margin: 0.8cm
     show_top_note: false
     show_footer: false
   # font_size:

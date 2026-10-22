@@ -14,7 +14,7 @@
         -- Optimizing sprint planning and demo meetings to maintain technical transparency and developer autonomy
 ## technical
     - Programming Language: 
-        proficient: Python, R, and SQL
+        proficient: Python, R, SQL, Claude Code 
     - Tech Stack: Docker, Git, vLLMs, Snowflake, CI/CD, Linux, LLMs
 
     <!-- - AI & LLM 
@@ -46,10 +46,12 @@
     start_date: 2024-06
     end_date: 2026-06
     highlights:
-      - "Established the IVD Supply Chain DS team, defining technical roadmaps and managing end-to-end SDLC."
-      - "Architected ML transformations to optimize enterprise supply chain S&OP for 4,000+ SKUs."
-      - "Built Streamlit interfaces for real-time model validation, tracking inventory drift and operational constraints."
-      - "Mentored junior data scientists on agile development, code quality standards, and evaluating operational uncertainty."
+        - "Built a local agentic code-review system (vLLM, FastAPI), comparing candidate models before selecting Qwen-2.5-Coder-72B, cutting manual PR review time by ~80%."
+        - "Founded the data science team and drove Mindray's first ML transformation, establishing agile practices and code review and mentoring junior data scientists."
+        - "Built Streamlit reporting tools that gave non-technical planners consistent forecasting and simulation numbers, cutting monthly planning cycles from 3 days to 3 hours."
+        - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, tracking forecast accuracy over time and lifting service levels from 85% to 93%."
+        - "Built a constrained discrete-event simulation with a weighted service-level/cost objective and simulation-based A/B tests, cutting S&OP costs by $200K (15%)."
+
   
   - company: Medidata Solutions Inc.
     position: Data Scientist | Senior Data Scientist
@@ -57,9 +59,11 @@
     start_date: 2021-11
     end_date: 2024-05
     highlights:
-      - "Owned anomaly detection models, detecting and mitigating data quality issues in clinical environments."
-      - "Led the migration of legacy R anomaly detection pipelines to Python, reducing pipeline execution time by 25%."
-      - "Developed statistical AE models, applying rigorous causal inference to evaluate partially observed clinical data."
+        - "Co-developed a natural-language-to-SQL LLM assistant on AWS, tracking failures through internal output labeling and refining prompts and fine-tuning to cut hallucination rate by 10%."
+        - "Built Poisson-based Key Risk Indicators on daily-refreshed Snowflake clinical trial data with data-quality checks and exact tests, improving risk detection accuracy by 13%."
+        - "Led and mentored a 3-person team migrating legacy R production modules to Python, cutting execution time by 25% and improving downstream data reliability."
+        - "Engineered features and retrained LightGBM models forecasting clinical study site performance, reducing operational latency by 6% to improve trial resource allocation."
+
 
   - company: NCIRE | US Dept. of Veteran Affairs | UCSF
     position: Statistician
