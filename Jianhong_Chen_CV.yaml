@@ -10,63 +10,63 @@ cv:
 
   sections:
     summary:
-      - "Senior Data Scientist & Tech Lead with 6+ years across medical devices, clinical trials, and healthcare data, and an MS in Statistics, shipping forecasting, risk-flagging, optimization, and agentic AI models to production in Python and SQL. Founded Mindray's data science team."
+      - "Senior Data Scientist and tech lead with 6 years of experience in clinical trial analytics, survival analysis, forecasting, and stochastic simulation. Founded a data science team, productionized statistical risk models, and deployed local LLM systems in healthcare and medical device settings."
 
     skills:
-      - label: "Predictive ML"
-        details: "Classification, Regression, Time-Series Forecasting, LightGBM, XGBoost, Feature Engineering"
-      - label: "Optimization"
-        details: "Supply Chain Optimization, Discrete-Event Simulation, Monte Carlo, Mixed-Integer Programming"
-      - label: "Agentic AI"
-        details: "LLM Agents, Structured Outputs (Pydantic), vLLM, FastAPI, Prompt Engineering, RAG"
-      - label: "Healthcare Data"
-        details: "Longitudinal EHR, ICD-9/ICD-10, Clinical Trial Data, HIPAA, Anomaly Detection"
-      - label: "Engineering"
-        details: "Python, SQL, Git, Code Review, Docker, AWS, Snowflake"
+      - label: "Programming Languages"
+        details: "Python, SQL, R, Claude Code"
+      - label: "ML & Statistics"
+        details: "Survival Analysis, Poisson Modeling, Forecasting, XGBoost, LightGBM"
+      - label: "Optimization & Simulation"
+        details: "Monte Carlo, Discrete-Event Simulation, Constrained Optimization"
+      - label: "LLM & Agentic Systems"
+        details: "Prompt Engineering, RAG, Claude, Qwen, vLLM, Ollama, Pydantic, Chroma"
+      - label: "Engineering & Cloud"
+        details: "Docker, CI/CD, Git, FastAPI, AWS, Snowflake, MySQL, Linux, Streamlit"
 
     experience:
       - company: Mindray
         position: "Senior Data Scientist & Tech Lead"
-        location: Shenzhen, China
+        location: "Shenzhen, China"
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Quantified planning bottlenecks with a stochastic simulation of production and inventory under capacity, lead-time, budget, and storage constraints, cutting S&OP costs by $200K (15%)."
-          - "Forecasted demand for 4,000+ medical-device SKUs with ARIMA, Prophet, and LSTM models, tracking accuracy over time and lifting service levels from 85% to 93%."
-          - "Built decision logic for a self-hosted agentic code-review system (Qwen-2.5-Coder-72B, vLLM, FastAPI) with Pydantic-validated outputs, cutting manual PR review time by ~80%."
-          - "Founded Mindray's data science team as hiring manager, managing 2 data scientists and setting Git, code-review, and testing standards for shipping to production."
-          - "Presented findings to technical and non-technical stakeholders through Streamlit decision tools, cutting monthly planning cycles from 3 days to 3 hours."
+          - "Founded and led a 3-person data science team, defining the enterprise ML roadmap and translating ambiguous supply chain constraints into AI product strategy for executive leadership."
+          - "Engineered a stochastic discrete-event simulation framework in Python and Docker to model inventory uncertainty, cutting projected S&OP costs by $200K (15%) in backtesting."
+          - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, powering an end-to-end planning system that raised backtested service levels from 85% to 93%."
+          - "Developed Streamlit decision-support apps operationalizing simulation and forecasting outputs for planners, replacing a ~3-day manual Excel planning process with a ~3-hour review cycle."
+          - "Architected and deployed an on-prem agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, cutting manual PR review time by ~80%."
 
       - company: Medidata Solutions Inc.
         position: "Senior Data Scientist (Promoted from Data Scientist)"
-        location: Remote (Bay Area, CA)
+        location: "Remote (Bay Area, CA)"
         start_date: 2021-11
         end_date: 2024-05
         highlights:
-          - "Productionized Poisson risk indicators on AWS over daily-refreshed Snowflake data, flagging anomalous trial sites with exact tests and improving risk detection accuracy by 13%."
-          - "Matched patient records across trials on age, weight, and location to flag potential duplicate enrollments, improving data integrity for downstream analyses."
-          - "Retrained LightGBM classification models predicting clinical site performance with newly engineered features, reducing operational latency by 6%."
-          - "Directed a 3-person team migrating legacy R production modules to Python, reducing execution time by 25% and improving downstream data reliability."
+          - "Directed a 3-person team refactoring legacy R production code into modular Python, raising unit-test coverage from ~70% to ~85% and cutting major bug fixes from half a day to under an hour."
+          - "Rebuilt the clinical trial risk-scoring module, engineering site-level Key Risk Indicators with Poisson and negative binomial models on daily Snowflake data; productionized on AWS."
+          - "Improved workflow logic and engineered features for LightGBM site-selection classifiers, laying the groundwork for a model retrain to support global trial resource allocation."
+          - "Co-developed a natural-language-to-SQL assistant prototype on AWS with Anthropic Claude models and prompt engineering, reducing hallucinated queries by ~10% in human-reviewed testing."
 
-      - company: NCIRE | US Dept. of Veteran Affairs | UCSF
+      - company: "NCIRE | US Dept. of Veterans Affairs | UCSF"
         position: Statistician
-        location: Remote (Bay Area, CA)
+        location: "Remote (Bay Area, CA)"
         start_date: 2020-05
         end_date: 2021-11
         highlights:
-          - "Analyzed COPD progression in an ICD-9/10-coded longitudinal VA EHR cohort with Cox, Kaplan-Meier, and mixed-effects models; co-authored 2 peer-reviewed publications."
-          - "Automated legacy CSV ingestion into MySQL pipelines, scaling pipeline capacity by 500x to accelerate research velocity."
+          - "Quantified COPD disease progression risk with survival analysis and regression on longitudinal EHR data, contributing to 2 peer-reviewed publications on critical clinical features."
+          - "Automated file-by-file Excel ingestion and QC into a MySQL database, replacing manual per-file loading with direct SQL queries and removing a key data bottleneck for COPD research."
 
     education:
       - institution: University of California, Santa Cruz
         area: Applied Mathematics and Statistics
         degree: MS
-        location: Santa Cruz, CA
+        location: "Santa Cruz, CA"
         end_date: 2019-12
       - institution: University of California, Santa Cruz
         area: Applied Physics
         degree: BS
-        location: Santa Cruz, CA
+        location: "Santa Cruz, CA"
         end_date: 2016-03
 
 design:
@@ -82,8 +82,12 @@ design:
 
 settings:
   bold_keywords:
-    - "planning bottlenecks"
-    - "medical-device SKUs"
-    - "agentic code-review system"
-    - "Productionized"
-    - "hiring manager"
+    - "Python"
+    - "SQL"
+    - "Poisson"
+    - "negative binomial"
+    - "survival analysis"
+    - "LightGBM"
+    - "Discrete-Event Simulation"
+    - "Qwen-2.5-Coder-72B"
+    - "vLLM"

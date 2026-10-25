@@ -302,7 +302,7 @@ Requirements:
 
 When run as a recurring daily task:
 - Use a **72-hour** posting window instead of 14 days.
-- Target **2–5** main-table roles; zero is an acceptable result.
+- Target **10** main-table roles; zero is an acceptable result.
 - Skip roles already reported in a previous run (check the sheet).
 - Keep the report to the summary, the table, and the top pick.
 
