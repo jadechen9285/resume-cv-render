@@ -6,7 +6,7 @@ This file is the **only** definition of match scoring for this project. The job 
 
 ## 1. Requirement evidence labels
 
-Classify each JD requirement against the candidate's verified evidence (master resume + `verified-experience-additions.md`):
+Classify each JD requirement against the candidate's verified evidence in `claude/candidate_profile.md` (Sections 3–6; Section 7 gaps are always No Evidence):
 
 | Label | Meaning |
 |---|---|

@@ -11,7 +11,7 @@ Here is the relevant information and background:
 [Paste any code snippets, datasets, or error logs here] -->
 
 **[CONSTRAINTS & METHODOLOGY]**
-- NEVER over exaggerate stuffs or technologies I didnt write down in the template I provided. 
+- `claude/candidate_profile.md` is the only source of truth. NEVER exaggerate or add anything not in it, and never use its "Never say" lines, confirmed gaps (Section 7), or unverified items (Section 11).
 - Always critice and NEVER listen to everything I say, be a strict mentor!
 - For `Experience/Projects` bullet points, at most 3-5 bullet points, be concise and avoid wall of text. ALWAYS use the following formats: 
     1. State what you were analysing, predicting or modelling.
