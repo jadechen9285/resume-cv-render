@@ -12,79 +12,16 @@ Optimize for interview probability and fit quality, not raw volume or employer p
 
 ## 2. CANDIDATE PROFILE — SOURCE OF TRUTH
 
-Use this as the authoritative record. Do not infer skills, credentials, or experience beyond it.
+Read the project doc **`claude/candidate_profile.md`** before searching. It is the only record of what is true about the candidate. Do not infer skills, credentials, or experience beyond it. If this prompt conflicts with the profile, the profile wins.
 
-```yaml
-candidate:
-  name: Jianhong Chen
-  location: Bay Area, California
-  work_authorization: US Citizen (no sponsorship needed)
-  relocation: Open to relocating anywhere in the United States
-  total_experience: "~6 years (May 2020 – June 2026); do not inflate"
-  employment_status: "Most recent role ended June 2026. Do not invent an explanation for the period after."
+Use it this way:
+- **Section 1 (Identity and logistics):** work authorization, relocation, ~6 years of experience, current status.
+- **Section 2 (Positioning):** the differentiators to match against JDs and to use in "Top 3 to apply to first."
+- **Sections 3–4 and 6 (Skills, Experience, Projects):** the evidence for "Top 3 JD requirements I match." Respect each metric's status: Mindray cost and service-level numbers are backtests, not measured results.
+- **Section 7 (Confirmed gaps):** classify these as No Evidence when a JD requires them.
+- **Section 11 (Not yet verified):** never use.
 
-  experience:
-    Mindray:
-      title: Senior Data Scientist & Tech Lead
-      context: Medical device manufacturer; large organization
-      dates: "June 2024 – June 2026"
-      evidence:
-        - Founded the data science team from scratch; led a 3-person team; defined the enterprise ML roadmap; mentored junior data scientists; code review.
-        - Internal consultant to supply chain / operations stakeholders (~2 years); translated ambiguous business logic into data-driven systems; communicated to non-technical stakeholders.
-        - Built a stochastic discrete-event simulation framework end to end (Python, Docker); constrained optimization (capacity, lead time, budget, storage); defined a weighted service-level + cost evaluation framework; grid search over policy parameters; Monte Carlo robustness runs; simulation-based A/B tests. Reduced S&OP costs by $200K (15%).
-        - Forecast demand across 4,000+ SKUs (ARIMA, Prophet, PyTorch LSTM); service level 85% → 93%; tracked forecast accuracy over time.
-        - Streamlit decision-support tools; planning cycle 3 days → 3 hours.
-        - Deployed a local agentic PR-review system (Qwen-2.5-Coder-72B, vLLM, FastAPI, Docker, 4× NVIDIA L20, Pydantic output validation); ~80% less manual review time.
-        - Prototyped embedding-based schema matching with a Chroma vector store.
-        - Worked under HIPAA with de-identified data.
-
-    Medidata:
-      title: Data Scientist, promoted to Senior Data Scientist
-      dates: "November 2021 – May 2024"
-      evidence:
-        - Led a 3-person team migrating legacy R production modules to Python; 25% faster execution.
-        - Engineered clinical trial Key Risk Indicators with Poisson modeling on daily-refreshed Snowflake data; data-quality and missingness checks; chi-square / exact tests to root-cause shifts; 13% better risk detection.
-        - Flagged potential duplicate patients enrolled across trials (matching on age, weight, location).
-        - Retrained (did not build from scratch) LightGBM classification models for clinical site selection; feature engineering.
-        - Co-developed an AWS natural-language-to-SQL assistant with fine-tuned LLMs and prompt engineering (informal, human-labeled evaluation).
-        - Clustering; mentoring; code review; HIPAA, de-identified data.
-
-    NCIRE_VA_UCSF:
-      title: Statistician
-      dates: "May 2020 – November 2021"
-      evidence:
-        - COPD progression analysis on longitudinal EHR data: Cox proportional hazards, Kaplan-Meier, mixed-effects models, OLS with confounder adjustment and collinearity checks (statistical inference, not causal estimation).
-        - Helped define COPD cohorts (inclusion/exclusion, outcomes); light consulting on analysis plans, endpoints, power calculations.
-        - Co-author and primary contributor on 2 peer-reviewed publications; publication figures in R.
-        - Automated CSV ingestion into MySQL; 500x pipeline capacity.
-
-  cross_role:
-    - Harmonized Excel, SQL databases, and clinical-form data.
-    - Daily tools: Python, SQL, R, scikit-learn, pandas, NumPy, statsmodels, SciPy, Jupyter, Git, Docker, FastAPI, Streamlit, AWS, Snowflake, MySQL, Linux; XGBoost, LightGBM, Random Forest.
-    - Writes unit and data tests; uses AI coding tools (Claude Code) daily.
-
-  education:
-    - MS, Applied Mathematics and Statistics, UC Santa Cruz (2019)
-    - BS, Applied Physics, UC Santa Cruz (2016)
-
-  confirmed_gaps:   # never assume these; penalize honestly when a JD requires them
-    - PhD, MD, clinical licensure, security clearance
-    - SAS; CDISC / SDTM / ADaM (aware only); regulatory submission work
-    - Client-facing / forward-deployed / external customer work; startup employment
-    - MLflow, SageMaker, dbt, Databricks, Spark/PySpark, Airflow/Prefect, Tableau/Looker, Hex
-    - Live A/B tests on users; quasi-experimental causal methods (DiD, IV, PSM, RD, synthetic control) — conceptual only
-    - FHIR/HL7; claims or RCM data; product/event-stream analytics
-    - Formal LLM eval harness, LLM-as-judge, golden datasets, inter-rater agreement
-    - Building a supervised ML model from scratch (label/metric selection)
-```
-
-### Positioning (strongest differentiators)
-
-1. Clinical trial analytics at Medidata (KRIs, Poisson modeling, data quality, site models).
-2. Survival analysis and longitudinal EHR research (VA/UCSF, 2 publications).
-3. Forecasting, stochastic simulation, and constrained optimization with measured business impact.
-4. Technical leadership: founded a team, mentored, translated ambiguous problems into systems.
-5. Practical LLM / agentic engineering (local inference, structured output, RAG prototyping).
+If you can't read `candidate_profile.md`, stop and report it instead of searching from memory.
 
 ---
 
@@ -201,7 +138,7 @@ Search by **title + method + domain** (e.g., "survival analysis data scientist",
 From titles and snippets, drop obvious misfits (hard-filter fails, wrong domain, junior/director). Keep the ~20–25 most promising.
 
 ### Phase 3 — Verify and score
-For each triaged role, open the original posting and confirm: exact title, employer, location, open status, posting date + evidence level, base salary, required vs preferred qualifications, direct requisition URL. Then score it with `scoring-rubric.md` (Section 7).
+For each triaged role, open the original posting and confirm: exact title, employer, location, open status, posting date + evidence level, base salary, required vs preferred qualifications, direct requisition URL. Then score it with `scoring_rubric.md` (Section 7).
 Budget rule: if a role can't be verified after 2 attempts, move it to the appropriate secondary section or drop it, and move on.
 
 ### Phase 4 — Report, then write to the sheet
@@ -226,7 +163,7 @@ Keep the A/B/C/D component scores for every role; they appear in the main table.
 
 ## 8. TIERS AND SORTING
 
-Assign tiers using the thresholds in `scoring-rubric.md`:
+Assign tiers using the thresholds in `scoring_rubric.md`:
 - **Tier A** and **Tier B** → main table.
 - **Stretch** → secondary "Stretch" list only.
 - Below the stretch threshold → do not list.
@@ -272,7 +209,7 @@ Requirements:
 ### Secondary sections (short, one line per role)
 1. **Open, date unverified** (max 5): verified open, posting date unknown.
 2. **Already-applied companies — new roles** (max 3).
-3. **Stretch** (per `scoring-rubric.md`; max 5).
+3. **Stretch** (per `scoring_rubric.md`; max 5).
 
 ### After the tables
 **A. Top 3 to apply to first.** For each: why it's strongest, the differentiating evidence, the main gap, and what to emphasize.
@@ -300,11 +237,11 @@ Requirements:
 
 ## 12. DAILY MODE (optional)
 
-When run as a recurring daily task:
-- Use a **72-hour** posting window instead of 14 days.
-- Target **10** main-table roles; zero is an acceptable result.
-- Skip roles already reported in a previous run (check the sheet).
-- Keep the report to the summary, the table, and the top pick.
+When run as the recurring daily scheduled task:
+- Use the standard 14-day posting window, preferring the last 72 hours.
+- Target **10** main-table roles; fewer (even zero) is acceptable when the market doesn't support more.
+- Skip roles already in the sheet, including ones appended by earlier runs.
+- Nobody is watching: don't ask questions; state any assumptions at the top of the report.
 
 ---
 
