@@ -301,7 +301,7 @@ Identify:
 
 # 9. MATCH SCORE
 
-Score the JD using **`scoring-rubric.md`**, the single source of truth for evidence labels, components, deductions, calibration anchors, and thresholds. Do not use any other scoring scheme. If anything in this prompt conflicts with that file, the rubric wins.
+Score the JD using **`scoring_rubric.md`**, the single source of truth for evidence labels, components, deductions, calibration anchors, and thresholds. Do not use any other scoring scheme. If anything in this prompt conflicts with that file, the rubric wins.
 
 Use the Strong / Partial / Weak / No Evidence labels from your Section 8 JD analysis to compute the Screen competitiveness deductions.
 

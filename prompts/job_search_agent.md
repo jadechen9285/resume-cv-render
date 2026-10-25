@@ -218,7 +218,7 @@ Produce the report (Section 10), then append main-table rows (Section 5).
 
 ## 7. SCORING
 
-Score every verified role using **`scoring-rubric.md`**, the single source of truth for evidence labels, components, deductions, calibration anchors, and thresholds. Do not use any other scoring scheme. If anything in this prompt conflicts with that file, the rubric wins.
+Score every verified role using **`scoring_rubric.md`**, the single source of truth for evidence labels, components, deductions, calibration anchors, and thresholds. Do not use any other scoring scheme. If anything in this prompt conflicts with that file, the rubric wins.
 
 Keep the A/B/C/D component scores for every role; they appear in the main table.
 
