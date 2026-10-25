@@ -10,19 +10,19 @@ cv:
 
   sections:
     summary:
-      - "Senior Data Scientist & Tech Lead with 6+ years across medical supply chain and clinical trials; founded Mindray's data science team. Ships risk-detection, forecasting, and constrained-optimization models to production, from ambiguous problem framing to decisions."
+      - "Senior Data Scientist & Tech Lead with 6+ years across medical devices, clinical trials, and healthcare data, and an MS in Statistics, shipping forecasting, risk-flagging, optimization, and agentic AI models to production in Python and SQL. Founded Mindray's data science team."
 
     skills:
-      - label: "Risk & Prediction"
-        details: "Anomaly Detection, Risk Scoring, Classification, LightGBM, XGBoost, Feature Engineering"
+      - label: "Predictive ML"
+        details: "Classification, Regression, Time-Series Forecasting, LightGBM, XGBoost, Feature Engineering"
       - label: "Optimization"
-        details: "Constrained Optimization, Discrete-Event Simulation, Monte Carlo, Grid Search, SciPy"
-      - label: "Forecasting & Stats"
-        details: "Time-Series Forecasting, ARIMA, Prophet, LSTM, Survival Analysis, Hypothesis Testing"
-      - label: "LLM Systems"
-        details: "LLM Agents, Qwen, vLLM, FastAPI, Pydantic, Prompt Engineering, RAG"
-      - label: "Data & Cloud"
-        details: "Python, SQL, AWS, Snowflake, Docker, Data Pipelines, Data-Quality Checks"
+        details: "Supply Chain Optimization, Discrete-Event Simulation, Monte Carlo, Mixed-Integer Programming"
+      - label: "Agentic AI"
+        details: "LLM Agents, Structured Outputs (Pydantic), vLLM, FastAPI, Prompt Engineering, RAG"
+      - label: "Healthcare Data"
+        details: "Longitudinal EHR, ICD-9/ICD-10, Clinical Trial Data, HIPAA, Anomaly Detection"
+      - label: "Engineering"
+        details: "Python, SQL, Git, Code Review, Docker, AWS, Snowflake"
 
     experience:
       - company: Mindray
@@ -31,11 +31,11 @@ cv:
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Founded Mindray's data science team from scratch, framing ambiguous supply chain problems into ML roadmap priorities and mentoring junior data scientists through code reviews."
-          - "Engineered a stochastic discrete-event simulation under capacity, lead-time, budget, and storage constraints, running simulation-based A/B policy tests and cutting S&OP costs by $200K (15%)."
-          - "Optimized planning policies against a weighted service-level/cost objective via grid search and Monte Carlo, operationalized in Streamlit, cutting planning from 3 days to 3 hours."
+          - "Quantified planning bottlenecks with a stochastic simulation of production and inventory under capacity, lead-time, budget, and storage constraints, cutting S&OP costs by $200K (15%)."
           - "Forecasted demand for 4,000+ medical-device SKUs with ARIMA, Prophet, and LSTM models, tracking accuracy over time and lifting service levels from 85% to 93%."
-          - "Deployed a self-hosted LLM agent (Qwen-2.5-Coder-72B, vLLM, FastAPI, Docker) on a 4× NVIDIA L20 cluster with Pydantic-validated outputs, cutting PR review time by ~80%."
+          - "Built decision logic for a self-hosted agentic code-review system (Qwen-2.5-Coder-72B, vLLM, FastAPI) with Pydantic-validated outputs, cutting manual PR review time by ~80%."
+          - "Founded Mindray's data science team as hiring manager, managing 2 data scientists and setting Git, code-review, and testing standards for shipping to production."
+          - "Presented findings to technical and non-technical stakeholders through Streamlit decision tools, cutting monthly planning cycles from 3 days to 3 hours."
 
       - company: Medidata Solutions Inc.
         position: "Senior Data Scientist (Promoted from Data Scientist)"
@@ -43,10 +43,10 @@ cv:
         start_date: 2021-11
         end_date: 2024-05
         highlights:
-          - "Productionized Poisson risk-scoring indicators on AWS over daily-refreshed Snowflake data, diagnosing unexpected shifts via exact tests and missingness checks; improved risk detection by 13%."
-          - "Reconciled patient records across trials by matching on age, weight, and location, flagging potential duplicate enrollments hidden in inconsistent multi-source data."
-          - "Retrained LightGBM classification models for clinical site selection with newly engineered features, reducing operational latency by 6%."
-          - "Co-developed a natural-language-to-SQL assistant on AWS using fine-tuned LLMs and prompt engineering, reducing query hallucination rate by 10%."
+          - "Productionized Poisson risk indicators on AWS over daily-refreshed Snowflake data, flagging anomalous trial sites with exact tests and improving risk detection accuracy by 13%."
+          - "Matched patient records across trials on age, weight, and location to flag potential duplicate enrollments, improving data integrity for downstream analyses."
+          - "Retrained LightGBM classification models predicting clinical site performance with newly engineered features, reducing operational latency by 6%."
+          - "Directed a 3-person team migrating legacy R production modules to Python, reducing execution time by 25% and improving downstream data reliability."
 
       - company: NCIRE | US Dept. of Veteran Affairs | UCSF
         position: Statistician
@@ -54,7 +54,7 @@ cv:
         start_date: 2020-05
         end_date: 2021-11
         highlights:
-          - "Modeled time-to-event COPD progression risk with Cox, Kaplan-Meier, and mixed-effects models on longitudinal EHR data; co-authored 2 peer-reviewed publications."
+          - "Analyzed COPD progression in an ICD-9/10-coded longitudinal VA EHR cohort with Cox, Kaplan-Meier, and mixed-effects models; co-authored 2 peer-reviewed publications."
           - "Automated legacy CSV ingestion into MySQL pipelines, scaling pipeline capacity by 500x to accelerate research velocity."
 
     education:
@@ -82,9 +82,8 @@ design:
 
 settings:
   bold_keywords:
-    - "Founded"
-    - "Productionized"
-    - "simulation-based A/B policy tests"
-    - "weighted service-level/cost objective"
-    - "time-to-event"
+    - "planning bottlenecks"
     - "medical-device SKUs"
+    - "agentic code-review system"
+    - "Productionized"
+    - "hiring manager"

@@ -301,25 +301,21 @@ Identify:
 
 # 9. MATCH SCORE
 
-Provide an overall **0–100 match score**.
+Score the JD using **`scoring-rubric.md`**, the single source of truth for evidence labels, components, deductions, calibration anchors, and thresholds. Do not use any other scoring scheme. If anything in this prompt conflicts with that file, the rubric wins.
 
-Break it down into:
+Use the Strong / Partial / Weak / No Evidence labels from your Section 8 JD analysis to compute the Screen competitiveness deductions.
 
-| Dimension            | Score |
-| -------------------- | ----: |
-| Technical skills     |  /100 |
-| ML/AI depth          |  /100 |
-| Domain experience    |  /100 |
-| Seniority            |  /100 |
-| Business impact      |  /100 |
-| Leadership/ownership |  /100 |
-| Overall              |  /100 |
+Report the score as a table:
 
-Do NOT inflate the score.
+| Component | Score | Rationale (one line) |
+|---|---:|---|
+| A. Domain fit | /30 | |
+| B. Method & technical fit | /30 | |
+| C. Seniority & experience fit | /15 | |
+| D. Screen competitiveness | /25 | |
+| **Overall** | **/100** | |
 
-IF Score is below 50, IMMEDIATE STOP and TELL me NOT A GOOD MATCH! NO NEED TO WASTE TIME for the outputting resuem yaml. 
-
----
+Then apply the rubric's **Resume tailoring agent** action for that score band: full tailoring, tailoring with a STRETCH warning at the top, or STOP with "NOT A GOOD MATCH" and no resume.
 
 # 10. CRITICAL GAPS
 
