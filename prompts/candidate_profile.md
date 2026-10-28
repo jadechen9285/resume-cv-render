@@ -1,6 +1,6 @@
 # Candidate Profile — Single Source of Truth
 
-**Owner:** Jianhong (JC) Chen · **Last verified:** 2026-10-25
+**Owner:** Jianhong (JC) Chen · **Last verified:** 2026-10-28
 
 This file is the only record of what is true about the candidate. The job search agent, the resume tailoring agent, cover letters, and interview prep all read from it. Resumes are *generated* from this file; they are never the source.
 
@@ -35,7 +35,7 @@ This file is the only record of what is true about the candidate. The job search
 
 ## 2. Positioning (strongest differentiators)
 
-1. Clinical trial analytics at Medidata: rebuilt the KRI risk-scoring module (Poisson / negative binomial), productionized on AWS.
+1. Clinical trial analytics at Medidata: owned the codebase of Medidata Detect (anomaly detection / risk-based quality management for clinical trial data), led its R → Python refactor, and rebuilt the KRI risk-scoring module (Poisson / negative binomial), productionized on AWS.
 2. Survival analysis on longitudinal EHR data at the VA/UCSF, with 2 peer-reviewed publications.
 3. Forecasting + stochastic simulation + constrained optimization, end to end, with backtested business impact.
 4. Technical leadership: founded a DS team, hired and mentored, introduced agile practices in a traditional industry.
@@ -118,7 +118,8 @@ English (professional), Mandarin (professional), Cantonese (native).
 
 **Verified facts**
 
-- **R → Python refactor:** led a 3-person team refactoring roughly 10–30 legacy R production scripts ("spaghetti" code) into modular Python, before AI coding tools were capable. Unit tests rewritten in Python; coverage went from ~70% to ~85%. Before: ~3–5 small bugs a week (~1 hour each) or an occasional major bug taking at least half a day; after: most fixes under an hour. Preprocessing got faster after removing unnecessary steps, but runtime was not measured.
+- **Medidata Detect ownership:** in charge of the Detect codebase (Medidata's anomaly-detection application for clinical trial data, used for risk-based quality management). Owned it end to end as its maintainer: kept it running and debugged it whenever issues came up. JC did not create the Detect product.
+- **R → Python refactor (Detect codebase):** led a 3-person team refactoring Detect's roughly 10–30 legacy R production scripts ("spaghetti" code) into modular Python, before AI coding tools were capable. Unit tests rewritten in Python; coverage went from ~70% to ~85%. Before: ~3–5 small bugs a week (~1 hour each) or an occasional major bug taking at least half a day; after: most fixes under an hour. Preprocessing got faster after removing unnecessary steps, but runtime was not measured.
 - **KRI risk-scoring module (see Project 6.4):** rebuilt with Poisson / negative binomial models on daily-refreshed Snowflake clinical trial data; data-quality and missingness checks; chi-square / exact tests to root-cause shifts; productionized on AWS.
 - **Duplicate patient flagging:** matched age, weight, and location to flag potential duplicate patients enrolled across trials. Flagging only; not used to rank reviews. Keep counts off the resume.
 - **LightGBM site-selection classifiers:** inherited an existing model; improved workflow logic and engineered features; started the retrain but left before it was finished. Did not choose the label or metric.
@@ -131,8 +132,8 @@ English (professional), Mandarin (professional), Cantonese (native).
 
 | Metric | Status | Basis |
 |---|---|---|
-| Test coverage ~70% → ~85% | Recalled | From the refactor. |
-| Major bug fix: half a day → under an hour | Recalled | From the refactor. |
+| Test coverage ~70% → ~85% | Recalled | From the Detect refactor. |
+| Major bug fix: half a day → under an hour | Recalled | From the Detect refactor. |
 | Hallucinated queries ~10% lower | Informal estimate | Relative reduction vs. the previous prompt version, estimated from one product partner's labels; no formal definition, golden set, or inter-rater agreement. |
 | ~~25% faster execution~~ | Retired | Runtime was never measured. |
 | ~~13% better risk detection~~ | Retired | No ground truth existed. Never use. |
@@ -140,12 +141,13 @@ English (professional), Mandarin (professional), Cantonese (native).
 
 **Approved resume bullets**
 
-- Directed a 3-person team refactoring legacy R production code into modular Python, raising unit-test coverage from ~70% to ~85% and cutting major bug fixes from half a day to under an hour.
+- Led a 3-person team refactoring Medidata Detect's legacy R anomaly-detection code into modular Python, raising test coverage from ~70% to ~85% and cutting major bug fixes to under an hour.
+- *Alternate for RBQM / clinical-ops JDs (swap with the bullet above, not added):* Owned and maintained the codebase of Medidata Detect, a clinical trial anomaly-detection platform, leading its R-to-Python refactor and debugging production issues as they arose.
 - Rebuilt the clinical trial risk-scoring module, engineering site-level Key Risk Indicators with Poisson and negative binomial models on daily Snowflake data; productionized on AWS.
 - Improved workflow logic and engineered features for LightGBM site-selection classifiers, laying the groundwork for a model retrain to support global trial resource allocation.
 - Co-developed a natural-language-to-SQL assistant prototype on AWS with Anthropic Claude models and prompt engineering, reducing hallucinated queries by ~10% in human-reviewed testing.
 
-**Never say:** "built" the LightGBM models or a finished retrain; "forecasted site performance"; LLM fine-tuning; that the NL-to-SQL assistant reached production (unknown; it was a prototype when JC left); rigorous LLM evaluation, kappa, or golden sets; creating the AWS pipelines; CDISC/SDTM/ADaM or SAS work.
+**Never say:** that JC created, designed, or launched Detect (he owned and maintained the existing codebase and led its refactor); Detect product or customer metrics; "built" the LightGBM models or a finished retrain; "forecasted site performance"; LLM fine-tuning; that the NL-to-SQL assistant reached production (unknown; it was a prototype when JC left); rigorous LLM evaluation, kappa, or golden sets; creating the AWS pipelines; CDISC/SDTM/ADaM or SAS work.
 
 ### 4.3 NCIRE | US Dept. of Veterans Affairs | UCSF — Statistician
 
@@ -262,7 +264,7 @@ No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 | Longest wait to know a change worked | ~3 months for the Mindray simulation-driven policy, with Monte Carlo stress tests and monthly forecast-accuracy / service-level tracking meanwhile. |
 | Panel / longitudinal data | Yes (longitudinal patient EHR data). Transaction data: no. |
 | Planning cycle | "A planner used to spend about 3 days, with overtime, building the monthly plan in Excel. The framework generates the full report in about 3 minutes; we budget about 3 hours so planners can review and sign off." |
-| R → Python refactor | "The R code was hard to maintain: a few small bugs a week, and the occasional big one took half a day to trace. We refactored it into modular, tested Python, raised coverage from about 70% to 85%, and most fixes after that took under an hour." |
+| R → Python refactor | "I owned the codebase for Medidata Detect, our anomaly-detection application for clinical trial data. The R code was hard to maintain: a few small bugs a week, and the occasional big one took half a day to trace. We refactored it into modular, tested Python, raised coverage from about 70% to 85%, and most fixes after that took under an hour." |
 | KRI accuracy (on older resumes) | "I'd put less weight on that number. We never had a validated ground truth for site risk. What I stand behind is the rebuild: Poisson and negative binomial scoring on daily data, in production on AWS." |
 | Causal inference | "I've applied statistical inference with confounder adjustment; I know DiD and PSM conceptually but haven't run them on production data." |
 
