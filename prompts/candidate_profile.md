@@ -57,6 +57,7 @@ This file is the only record of what is true about the candidate. The job search
 | Data & engineering | pandas, NumPy, statsmodels, Jupyter, FastAPI, Streamlit, Docker, Git, CI/CD, Linux, uv (Mindray and recent projects), basic ETL design (Mindray), unit and data testing |
 | Data platforms & cloud | Snowflake, MySQL; AWS EC2, S3, Step Functions (Medidata: maintained existing pipelines regularly, did not create them) |
 | Visualization | ggplot2 (R), Matplotlib, Seaborn, Plotly |
+| Cytometry | Mass cytometry (CyTOF) data analysis from FCS files (VA); FlowSOM clustering; UMAP, t-SNE, and other dimensionality reduction; volcano plots |
 | Healthcare data | Longitudinal EHR, ICD-9 and ICD-10 coding, clinical trial operational data, clinical-form data; HIPAA with de-identified data |
 | Self-directed only | Mixed-integer programming (PPC project, Section 6). Skills row only; never in a job bullet; disclose as self-directed if asked. |
 
@@ -158,6 +159,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Lead data analyst / statistician for the COPD project; trials and experiments were run by other team members.
 - Prototyped Random Forest and XGBoost models for some of the data modeling; these results were not published.
 - Used PCA, UMAP, and t-SNE frequently.
+- **Mass cytometry:** analyzed mass cytometry FCS files; clustered cell populations with FlowSOM; used UMAP, t-SNE, and other dimensionality-reduction methods; produced volcano plots. Did not run the instrument or the wet-lab experiments.
 - COPD progression analysis on longitudinal EHR data: Cox proportional hazards, Kaplan–Meier, mixed-effects models (one analysis), OLS with confounder adjustment and collinearity checks. Statistical inference, not causal estimation.
 - Used both ICD-9 and ICD-10 codes for cohort and outcome definitions.
 - Helped (a little) define COPD cohorts: inclusion/exclusion criteria and outcomes.
@@ -169,8 +171,9 @@ English (professional), Mandarin (professional), Cantonese (native).
 
 - Quantified COPD disease progression risk with survival analysis and regression on longitudinal EHR data, contributing to 2 peer-reviewed publications on critical clinical features.
 - Automated file-by-file Excel ingestion and QC into a MySQL database, replacing manual per-file loading with direct SQL queries and removing a key data bottleneck for COPD research.
+- *Alternate for cytometry / single-cell JDs (swap in, keeping 2 NCIRE bullets):* Analyzed mass cytometry FCS data, clustering cell populations with FlowSOM and visualizing them with UMAP and t-SNE, and summarizing group differences with volcano plots.
 
-**Never say:** "500x pipeline capacity" (rough estimate only); causal inference; that he ran the trials or experiments; that tree-based / ensemble models were part of the published work (they were unpublished prototypes). "Led the statistical analysis" is fine.
+**Never say:** single-cell RNA-seq or flow-cytometry gating panel design (not stated); running the cytometer or wet-lab work; "500x pipeline capacity" (rough estimate only); causal inference; that he ran the trials or experiments; that tree-based / ensemble models were part of the published work (they were unpublished prototypes). "Led the statistical analysis" is fine.
 
 ---
 
@@ -293,6 +296,8 @@ No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 
 ## 11. Not yet verified
 
-Nothing open as of 2026-10-25. Add new unconfirmed claims here before using them anywhere.
+Add new unconfirmed claims here before using them anywhere.
+
+- **Cytometry details (open 2026-10-28):** language and packages used (R? e.g., flowCore, CATALYST); what the volcano plots compared (differential abundance or marker expression, and which test); whether this fed the 2 publications. Until confirmed, don't say "in R", name packages beyond FlowSOM, or link cytometry to the publications.
 
 Resolved on 2026-10-25: live A/B tests (none; stakeholders declined), Bayesian optimization (planned only), Monte Carlo (robustness only), VA role (lead analyst/statistician), VA Random Forest / XGBoost (unpublished prototypes), fine-tuning (none; prompt engineering), PCA/UMAP/t-SNE and clustering, AWS EC2/S3/Step Functions, uv, basic ETL, Postgres (no), SAP (no), C++ (no), RAG (unfinished prototype), agentic orchestration (no), ~80% PR-review basis, NL-to-SQL model, status, and ~10% (relative, estimated).

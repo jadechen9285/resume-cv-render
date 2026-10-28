@@ -10,19 +10,19 @@ cv:
 
   sections:
     summary:
-      - "Senior Data Scientist and tech lead with ~6 years in data science and statistics (senior since 2023) and an MS in Applied Math & Statistics, building forecasting, simulation, and optimization models on healthcare and operational data and partnering directly with leadership on decisions."
+      - "Data scientist with ~6 years in data science and statistics (senior since 2023) and an MS in Applied Math & Statistics, building inventory simulation, demand forecasting, and constrained-optimization models for medical-device supply chains in tested, production Python and SQL."
 
     skills:
-      - label: "Modeling"
-        details: "Predictive Modeling, XGBoost, LightGBM, Poisson/NB, Survival Analysis"
-      - label: "Ops Modeling"
-        details: "Discrete-Event Simulation, Constrained Optimization, Monte Carlo, Forecasting"
-      - label: "Healthcare Data"
-        details: "Clinical Trial Data, Longitudinal EHR, ICD-9/ICD-10, HIPAA"
-      - label: "Data & Code"
-        details: "Python, SQL, Snowflake, AWS, Docker, Git, Streamlit"
-      - label: "AI"
-        details: "Claude (AWS), Qwen, vLLM, Prompt Engineering, Pydantic, Claude Code"
+      - label: "Inventory & Supply Chain"
+        details: "Inventory Policy, Demand Forecasting, Discrete-Event Simulation"
+      - label: "Optimization"
+        details: "Constrained Optimization, Mixed-Integer Programming, Monte Carlo, SciPy"
+      - label: "ML & Statistics"
+        details: "XGBoost, LightGBM, Random Forest, Regression, Clustering, ARIMA, Prophet"
+      - label: "Code & Data"
+        details: "Python, SQL, Git, Unit & Data Tests, Docker, Snowflake, AWS"
+      - label: "AI Agents"
+        details: "Agentic Code Review, vLLM, Qwen, Claude, Pydantic, Claude Code"
 
     experience:
       - company: Mindray
@@ -31,11 +31,11 @@ cv:
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Modeled operational bottlenecks with a stochastic discrete-event simulation under capacity, lead-time, budget, and storage constraints, cutting projected S&OP costs by $200K (15%) in backtesting."
-          - "Defined the metric the business planned against, a weighted service-level/cost objective, and optimized planning policies via grid search with Monte Carlo robustness testing."
+          - "Engineered a stochastic simulation framework in Python and Docker to set inventory policies under capacity, lead-time, budget, and storage limits, cutting projected S&OP costs $200K (15%) in backtesting."
+          - "Optimized planning policies against a weighted service-level/cost objective via grid search, comparing them with simulation-based A/B tests and Monte Carlo robustness runs."
           - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, powering an end-to-end planning system that raised backtested service levels from 85% to 93%."
-          - "Partnered directly with executive leadership on the enterprise ML roadmap, earning adoption from skeptical operations teams by checking every assumption and showing backtests."
-          - "Founded and led a 3-person data science team as hiring manager, shipping Streamlit tools that replaced a ~3-day manual Excel planning process with a ~3-hour review."
+          - "Developed Streamlit decision-support apps operationalizing simulation and forecasting outputs for planners, replacing a ~3-day manual Excel process with a ~3-hour review cycle."
+          - "Architected and deployed an on-prem agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, cutting manual PR review time by ~80%."
 
       - company: Medidata Solutions Inc.
         position: "Senior Data Scientist (Promoted from Data Scientist)"
@@ -43,10 +43,10 @@ cv:
         start_date: 2021-11
         end_date: 2024-05
         highlights:
+          - "Directed a 3-person team refactoring Medidata Detect, an anomaly-detection app for clinical trial data, from legacy R into modular Python, raising test coverage from ~70% to ~85%."
           - "Rebuilt the clinical trial risk-scoring module, engineering site-level Key Risk Indicators with Poisson and negative binomial models on daily Snowflake data; productionized on AWS."
-          - "Directed a 3-person team refactoring Medidata Detect, an RBQM anomaly-detection app for clinical trial data, from legacy R into modular Python, raising test coverage from ~70% to ~85%."
-          - "Co-developed a natural-language-to-SQL assistant prototype on AWS with Anthropic Claude models and prompt engineering, reducing hallucinated queries by ~10% in human-reviewed testing."
           - "Improved workflow logic and engineered features for LightGBM site-selection classifiers, laying the groundwork for a model retrain to support global trial resource allocation."
+          - "Co-developed a natural-language-to-SQL assistant prototype on AWS with Anthropic Claude models and prompt engineering, reducing hallucinated queries by ~10% in human-reviewed testing."
 
       - company: NCIRE | US Dept. of Veteran Affairs | UCSF
         position: Statistician
@@ -82,8 +82,8 @@ design:
 
 settings:
   bold_keywords:
-    - "operational bottlenecks"
+    - "inventory policies"
     - "weighted service-level/cost objective"
-    - "executive leadership"
-    - "Medidata Detect"
-    - "clinical trial risk-scoring module"
+    - "4,000+ SKUs"
+    - "agentic code-review system"
+    - "~70% to ~85%"
