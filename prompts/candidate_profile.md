@@ -51,13 +51,14 @@ This file is the only record of what is true about the candidate. The job search
 | Statistics | Survival analysis (Cox PH, Kaplan–Meier), Poisson and negative binomial modeling, chi-square and exact tests, mixed-effects models, OLS with confounder adjustment and collinearity checks, power calculations (light), statistical inference (not causal estimation) |
 | Dimensionality reduction | PCA, UMAP, t-SNE (used frequently at the VA and Medidata) |
 | ML | XGBoost, LightGBM, Random Forest, anomaly detection, scikit-learn; clustering (K-means, density-based, hierarchical: studied in grad school; used at work for proofs of concept and prototypes) |
+| Earlier methods (VA / grad school) | Logistic regression, mixture models, partial principal component regression, SMOTE for class imbalance, MLP; R Bioconductor (microarray analysis), gene ontology enrichment; TensorFlow/Keras (basic) |
 | Forecasting | ARIMA, Prophet, LSTM (PyTorch, package baseline model) |
 | Simulation & optimization | Stochastic discrete-event simulation, Monte Carlo methods, constrained optimization, grid search over policy parameters, SciPy |
 | LLM & agentic | Local LLM serving (vLLM, Ollama), Qwen-2.5-Coder-72B, Anthropic Claude via AWS, prompt engineering, Pydantic output validation, agentic code review; RAG with Chroma (prototype only) |
 | Data & engineering | pandas, NumPy, statsmodels, Jupyter, FastAPI, Streamlit, Docker, Git, CI/CD, Linux, uv (Mindray and recent projects), basic ETL design (Mindray), unit and data testing |
 | Data platforms & cloud | Snowflake, MySQL; AWS EC2, S3, Step Functions (Medidata: maintained existing pipelines regularly, did not create them) |
 | Visualization | ggplot2 (R), Matplotlib, Seaborn, Plotly |
-| Cytometry | Mass cytometry (CyTOF) data analysis from FCS files (VA); FlowSOM clustering; UMAP, t-SNE, and other dimensionality reduction; volcano plots |
+| Cytometry | Mass cytometry (CyTOF) data analysis from FCS files in R with flowCore and CATALYST (VA); FlowSOM clustering; UMAP, t-SNE, and other dimensionality reduction; volcano plots |
 | Healthcare data | Longitudinal EHR, ICD-9 and ICD-10 coding, clinical trial operational data, clinical-form data; HIPAA with de-identified data |
 | Self-directed only | Mixed-integer programming (PPC project, Section 6). Skills row only; never in a job bullet; disclose as self-directed if asked. |
 
@@ -159,12 +160,17 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Lead data analyst / statistician for the COPD project; trials and experiments were run by other team members.
 - Prototyped Random Forest and XGBoost models for some of the data modeling; these results were not published.
 - Used PCA, UMAP, and t-SNE frequently.
-- **Mass cytometry:** analyzed mass cytometry FCS files; clustered cell populations with FlowSOM; used UMAP, t-SNE, and other dimensionality-reduction methods; produced volcano plots. Did not run the instrument or the wet-lab experiments.
+- **Mass cytometry:** analyzed mass cytometry FCS files in R with flowCore and CATALYST; clustered cell populations with FlowSOM; used UMAP, t-SNE, and other dimensionality-reduction methods; produced volcano plots. Did not run the instrument or the wet-lab experiments.
 - COPD progression analysis on longitudinal EHR data: Cox proportional hazards, Kaplan–Meier, mixed-effects models (one analysis), OLS with confounder adjustment and collinearity checks. Statistical inference, not causal estimation.
 - Used both ICD-9 and ICD-10 codes for cohort and outcome definitions.
 - Helped (a little) define COPD cohorts: inclusion/exclusion criteria and outcomes.
 - Consulted (a little) on analysis plans, endpoints, and power calculations.
-- Co-author and primary contributor on 2 peer-reviewed publications; publication figures made in R with ggplot2; constant data visualization work.
+- Co-author and primary contributor on 2 peer-reviewed publications, one as first co-author (Respiratory Medicine, 2021: https://www.resmedjournal.com/article/S0954-6111(21)00249-3/fulltext); publication figures made in R with ggplot2; constant data visualization work.
+- Led the analysis on 3 main COPD research projects plus 2 smaller analyses (exact list not recalled). Say "led analysis on 3 COPD research projects"; never "led 5+ projects."
+- Worked across EHR, CyTOF, and RCT data for COPD research (diagnosis, physiology, comorbidities).
+- Advised and collaborated with postdocs and medical researchers on experiment design, data extraction, and statistical analysis.
+- Scaled data extraction from the VA MySQL server using a common data model (CDM); per the 2021 resume, from the ~1K to ~500K record range.
+- **VA EHR data mining (see Project 6.7)** and **actigraphy RCT analysis (see Project 6.8)**.
 - Automated data ingestion: replaced file-by-file Excel reading (each file with QC checks and light preprocessing) with automated ingestion into MySQL so analyses query the database directly.
 
 **Approved resume bullets**
@@ -173,7 +179,12 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Automated file-by-file Excel ingestion and QC into a MySQL database, replacing manual per-file loading with direct SQL queries and removing a key data bottleneck for COPD research.
 - *Alternate for cytometry / single-cell JDs (swap in, keeping 2 NCIRE bullets):* Analyzed mass cytometry FCS data, clustering cell populations with FlowSOM and visualizing them with UMAP and t-SNE, and summarizing group differences with volcano plots.
 
-**Never say:** single-cell RNA-seq or flow-cytometry gating panel design (not stated); running the cytometer or wet-lab work; "500x pipeline capacity" (rough estimate only); causal inference; that he ran the trials or experiments; that tree-based / ensemble models were part of the published work (they were unpublished prototypes). "Led the statistical analysis" is fine.
+**Never say:** A/B testing for the RCT work (say "analyzed RCT data"); "500K" or "500x" scale claims without the CDM context; single-cell RNA-seq or flow-cytometry gating panel design (not stated); running the cytometer or wet-lab work; "500x pipeline capacity" (rough estimate only); causal inference; that he ran the trials or experiments; that tree-based / ensemble models were part of the published work (they were unpublished prototypes). "Led the statistical analysis" is fine.
+
+### 4.4 Earlier roles (before the ~6 years; don't count toward experience)
+
+- **UC Santa Cruz, Applied Mathematics and Statistics — Graduate Student Researcher** (2017-07 to 2019-12): built an R Bioconductor data-mining pipeline on DNA microarray data to find candidate biomarker genes for wound-healing stages, combining PCA, k-means clustering, and gene ontology; reviewed 10+ papers; led a team of 3 students with weekly meetings and mentoring.
+- **Ontera Inc. (nanopore sequencing startup) — Mechanical Engineer Intern** (2017-02 to 2017-05): collected QC measurements on single-pore devices and visualized them in Python; parallelized microfluidic device fabrication, ~3× production (2021 resume figure); offered a full-time role by the CTO.
 
 ---
 
@@ -181,8 +192,8 @@ English (professional), Mandarin (professional), Cantonese (native).
 
 | Degree | Field | School | Completed |
 |---|---|---|---|
-| MS | Applied Mathematics and Statistics | University of California, Santa Cruz | 2019-12 |
-| BS | Applied Physics (Minor in Electrical Engineering) | University of California, Santa Cruz | 2016-03 |
+| MS | Applied Mathematics and Statistics (GPA 3.68; Chancellor Fellowship) | University of California, Santa Cruz | 2019-12 |
+| BS | Applied Physics (Minor in Electrical Engineering; GPA 3.59) | University of California, Santa Cruz | 2016-03 |
 
 No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 
@@ -230,6 +241,26 @@ No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 - **What it does:** analyzes Amazon PPC advertising data to find zero-converting search terms, map buyer intent, and detect search-term cannibalization and structural waste across ad structures.
 - **Optimization:** mixed-integer programming / constrained optimization to allocate ad budget and CPC for better ad-spend ROI.
 - **Disclosure:** self-directed project, not employment. The only place mixed-integer programming was used.
+
+### 6.6 ML Models from Scratch (personal)
+
+- **Dates:** 2021-07 onward · **Languages:** R and Python
+- Implemented linear and softmax regression (and a neural net write-up) from scratch; GitHub `jadechen9285/ML_Scratch`; write-ups on Kaggle (English) and CSDN (Chinese).
+
+### 6.7 VA EHR Data Mining (VA)
+
+- **Dates:** 2020-08 to 2021-11 · **Languages:** SQL, R
+- **Data:** nationwide VA EHR, >100,000 patients, >30 features; joined and extracted millions of rows from the VA MySQL server.
+- **Work:** data processing, feature engineering, SMOTE for highly imbalanced classes; compared models for statistical inference and for predicting healthcare utilization / COPD exacerbation.
+- **Result:** internal prototype; best model (MLP) reached 76% balanced accuracy and 0.69 F1 for predicting exacerbation. Unpublished. Usable only as "in an internal prototype."
+- **Models tried:** SVM was tested but underperformed the other models; don't list SVM as a used skill.
+
+### 6.8 Actigraphy Data for COPD Complications (VA)
+
+- **Dates:** 2020-12 to 2021-03 · **Language:** R
+- **Data:** double-blinded RCT, 64 subjects, >70 features, 5 repeated measurements.
+- **Work:** managed the RCT database after the trial; data cleaning and visualization; partial principal component regression to find features predicting key COPD performance indices.
+- **Result:** first co-author, Respiratory Medicine (2021).
 
 ---
 
@@ -298,6 +329,9 @@ No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 
 Add new unconfirmed claims here before using them anywhere.
 
-- **Cytometry details (open 2026-10-28):** language and packages used (R? e.g., flowCore, CATALYST); what the volcano plots compared (differential abundance or marker expression, and which test); whether this fed the 2 publications. Until confirmed, don't say "in R", name packages beyond FlowSOM, or link cytometry to the publications.
+Resolved on 2026-10-28: 2021-resume items (3 main projects + 2 small analyses; SVM tried only; MLP result is an internal prototype; RCT work is not A/B testing).
+
+
+- **Cytometry details (open 2026-10-28):** what the volcano plots compared (differential abundance or marker expression, and which test); whether this fed the 2 publications. Until confirmed, don't link cytometry to the publications.
 
 Resolved on 2026-10-25: live A/B tests (none; stakeholders declined), Bayesian optimization (planned only), Monte Carlo (robustness only), VA role (lead analyst/statistician), VA Random Forest / XGBoost (unpublished prototypes), fine-tuning (none; prompt engineering), PCA/UMAP/t-SNE and clustering, AWS EC2/S3/Step Functions, uv, basic ETL, Postgres (no), SAP (no), C++ (no), RAG (unfinished prototype), agentic orchestration (no), ~80% PR-review basis, NL-to-SQL model, status, and ~10% (relative, estimated).

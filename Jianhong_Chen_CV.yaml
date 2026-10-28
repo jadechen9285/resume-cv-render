@@ -10,19 +10,19 @@ cv:
 
   sections:
     summary:
-      - "Data scientist with ~6 years in data science and statistics (senior since 2023) and an MS in Applied Math & Statistics, building inventory simulation, demand forecasting, and constrained-optimization models for medical-device supply chains in tested, production Python and SQL."
+      - "Senior Data Scientist and tech lead with ~6 years in data science and statistics (senior since 2023) and an MS in Statistics, modeling patient outcomes and clinical risk on EHR and clinical trial data, taking models to production under HIPAA, and founding a data science team as its first hire."
 
     skills:
-      - label: "Inventory & Supply Chain"
-        details: "Inventory Policy, Demand Forecasting, Discrete-Event Simulation"
-      - label: "Optimization"
-        details: "Constrained Optimization, Mixed-Integer Programming, Monte Carlo, SciPy"
-      - label: "ML & Statistics"
-        details: "XGBoost, LightGBM, Random Forest, Regression, Clustering, ARIMA, Prophet"
-      - label: "Code & Data"
-        details: "Python, SQL, Git, Unit & Data Tests, Docker, Snowflake, AWS"
-      - label: "AI Agents"
-        details: "Agentic Code Review, vLLM, Qwen, Claude, Pydantic, Claude Code"
+      - label: "Healthcare Data"
+        details: "Longitudinal EHR, Clinical Trial Data, ICD-9/ICD-10, HIPAA, Cohort Definition"
+      - label: "Outcomes Modeling"
+        details: "Survival Analysis (Cox, KM), Mixed-Effects, Confounder-Adjusted Regression"
+      - label: "Machine Learning"
+        details: "XGBoost, LightGBM, Random Forest, scikit-learn, Anomaly Detection"
+      - label: "Data & Production"
+        details: "Python, R, SQL, Snowflake, AWS, Docker, Git, Unit & Data Tests"
+      - label: "Product & AI"
+        details: "Streamlit, Plotly, ggplot2, LLMs (Claude, Qwen), Claude Code"
 
     experience:
       - company: Mindray
@@ -31,10 +31,10 @@ cv:
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Engineered a stochastic simulation framework in Python and Docker to set inventory policies under capacity, lead-time, budget, and storage limits, cutting projected S&OP costs $200K (15%) in backtesting."
-          - "Optimized planning policies against a weighted service-level/cost objective via grid search, comparing them with simulation-based A/B tests and Monte Carlo robustness runs."
+          - "Founded Mindray's data science team as its first data scientist and hiring manager, defining what to measure and model and setting data-quality and documentation standards."
+          - "Engineered a stochastic discrete-event simulation framework in Python and Docker to model inventory uncertainty, cutting projected S&OP costs by $200K (15%) in backtesting."
           - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, powering an end-to-end planning system that raised backtested service levels from 85% to 93%."
-          - "Developed Streamlit decision-support apps operationalizing simulation and forecasting outputs for planners, replacing a ~3-day manual Excel process with a ~3-hour review cycle."
+          - "Earned adoption from skeptical operations leaders by checking every assumption with them, replacing a ~3-day manual Excel process with ~3-hour Streamlit reviews."
           - "Architected and deployed an on-prem agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, cutting manual PR review time by ~80%."
 
       - company: Medidata Solutions Inc.
@@ -43,10 +43,10 @@ cv:
         start_date: 2021-11
         end_date: 2024-05
         highlights:
-          - "Directed a 3-person team refactoring Medidata Detect, an anomaly-detection app for clinical trial data, from legacy R into modular Python, raising test coverage from ~70% to ~85%."
           - "Rebuilt the clinical trial risk-scoring module, engineering site-level Key Risk Indicators with Poisson and negative binomial models on daily Snowflake data; productionized on AWS."
-          - "Improved workflow logic and engineered features for LightGBM site-selection classifiers, laying the groundwork for a model retrain to support global trial resource allocation."
-          - "Co-developed a natural-language-to-SQL assistant prototype on AWS with Anthropic Claude models and prompt engineering, reducing hallucinated queries by ~10% in human-reviewed testing."
+          - "Directed a 3-person team refactoring Medidata Detect, an anomaly-detection app for clinical trial data, from legacy R into modular Python, raising test coverage from ~70% to ~85%."
+          - "Applied data-quality and missingness checks, confidence intervals on site rates, and chi-square and exact tests to judge whether site-level signals were real or noise."
+          - "Flagged potential duplicate patients enrolled across trials by matching age, weight, and location, supporting clinical trial data integrity."
 
       - company: NCIRE | US Dept. of Veteran Affairs | UCSF
         position: Statistician
@@ -54,8 +54,8 @@ cv:
         start_date: 2020-05
         end_date: 2021-11
         highlights:
-          - "Quantified COPD disease progression risk with survival analysis and regression on longitudinal EHR data, contributing to 2 peer-reviewed publications on critical clinical features."
-          - "Automated file-by-file Excel ingestion and QC into a MySQL database, replacing manual per-file loading with direct SQL queries and removing a key data bottleneck."
+          - "Led statistical analysis of COPD progression outcomes on ICD-coded longitudinal EHR data with Cox, Kaplan-Meier, mixed-effects, and confounder-adjusted models; contributed to 2 publications."
+          - "Prototyped Random Forest and XGBoost models on COPD patient data, supported cohort definition and power calculations, and automated Excel ingestion and QC into MySQL."
 
     education:
       - institution: University of California, Santa Cruz
@@ -82,8 +82,8 @@ design:
 
 settings:
   bold_keywords:
-    - "inventory policies"
-    - "weighted service-level/cost objective"
-    - "4,000+ SKUs"
-    - "agentic code-review system"
-    - "~70% to ~85%"
+    - "first data scientist"
+    - "Earned adoption"
+    - "Medidata Detect"
+    - "COPD progression outcomes"
+    - "clinical trial risk-scoring module"
