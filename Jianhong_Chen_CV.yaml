@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
 cv:
   name: Jianhong Chen
   location: "Bay Area, CA | U.S. Citizen"
@@ -7,23 +6,20 @@ cv:
   social_networks:
     - network: LinkedIn
       username: jianhong-chen-9285jc
-
   sections:
     summary:
-      - "Senior Data Scientist and tech lead with ~6 years in data science and statistics (senior since 2023) and an MS in Statistics, modeling patient outcomes and clinical risk on EHR and clinical trial data, taking models to production under HIPAA, and founding a data science team as its first hire."
-
+      - "Senior Data Scientist and tech lead with about 6 years in data science and statistics, building predictive and prescriptive models, demand forecasting, decision support tools, and an on-prem LLM agent. Partners with business leaders on ambiguous problems and mentors data scientists on model development best practices."
     skills:
-      - label: "Healthcare Data"
-        details: "Longitudinal EHR, Clinical Trial Data, ICD-9/ICD-10, HIPAA, Cohort Definition"
-      - label: "Outcomes Modeling"
-        details: "Survival Analysis (Cox, KM), Mixed-Effects, Confounder-Adjusted Regression"
+      - label: "Predictive & Prescriptive"
+        details: "Demand forecasting (ARIMA, Prophet), constrained optimization, simulation, Monte Carlo"
       - label: "Machine Learning"
-        details: "XGBoost, LightGBM, Random Forest, scikit-learn, Anomaly Detection"
-      - label: "Data & Production"
-        details: "Python, R, SQL, Snowflake, AWS, Docker, Git, Unit & Data Tests"
-      - label: "Product & AI"
-        details: "Streamlit, Plotly, ggplot2, LLMs (Claude, Qwen), Claude Code"
-
+        details: "XGBoost, LightGBM, classification, regression, feature engineering, model validation"
+      - label: "AI Agents & LLMs"
+        details: "Agentic AI, vLLM, Qwen, Anthropic Claude, prompt engineering, RAG (prototype)"
+      - label: "Data & Cloud"
+        details: "Python, SQL, Snowflake, AWS (EC2, S3, Step Functions), ETL pipelines"
+      - label: "Tools"
+        details: "Streamlit, FastAPI, Docker, Git, CI/CD, Plotly"
     experience:
       - company: Mindray
         position: "Senior Data Scientist & Tech Lead"
@@ -31,12 +27,11 @@ cv:
         start_date: 2024-06
         end_date: 2026-06
         highlights:
-          - "Founded Mindray's data science team as its first data scientist and hiring manager, defining what to measure and model and setting data-quality and documentation standards."
-          - "Engineered a stochastic discrete-event simulation framework in Python and Docker to model inventory uncertainty, cutting projected S&OP costs by $200K (15%) in backtesting."
-          - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, powering an end-to-end planning system that raised backtested service levels from 85% to 93%."
-          - "Earned adoption from skeptical operations leaders by checking every assumption with them, replacing a ~3-day manual Excel process with ~3-hour Streamlit reviews."
-          - "Architected and deployed an on-prem agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, cutting manual PR review time by ~80%."
-
+          - "Founded and led a 3-person data science team, mentoring 2 data scientists on model development and partnering with business and executive leaders on an enterprise ML roadmap."
+          - "Built prescriptive planning models with constrained optimization and stochastic simulation under capacity, lead-time, and budget limits, cutting projected S&OP costs by **$200K (15%)** in backtesting."
+          - "Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, validating accuracy monthly and raising backtested service levels from **85% to 93%**."
+          - "Architected and deployed an on-prem AI agent for code review (Qwen-2.5-Coder-72B, vLLM, FastAPI) with Pydantic guardrails on outputs, cutting manual PR review time by **~80%**."
+          - "Delivered Streamlit decision-support tools that cut a ~3-day planning cycle to **~3 hours**."
       - company: Medidata Solutions Inc.
         position: "Senior Data Scientist (Promoted from Data Scientist)"
         location: Remote (Bay Area, CA)
@@ -44,19 +39,18 @@ cv:
         end_date: 2024-05
         highlights:
           - "Rebuilt the clinical trial risk-scoring module, engineering site-level Key Risk Indicators with Poisson and negative binomial models on daily Snowflake data; productionized on AWS."
-          - "Directed a 3-person team refactoring Medidata Detect, an anomaly-detection app for clinical trial data, from legacy R into modular Python, raising test coverage from ~70% to ~85%."
-          - "Applied data-quality and missingness checks, confidence intervals on site rates, and chi-square and exact tests to judge whether site-level signals were real or noise."
-          - "Flagged potential duplicate patients enrolled across trials by matching age, weight, and location, supporting clinical trial data integrity."
-
-      - company: NCIRE | US Dept. of Veteran Affairs | UCSF
+          - "Improved workflow logic and engineered features for LightGBM site-selection classifiers, laying the groundwork for a model retrain to support global trial resource allocation."
+          - "Co-developed a natural-language-to-SQL assistant prototype connecting Anthropic Claude to enterprise data on AWS, reducing hallucinated queries by **~10%** in human-reviewed testing."
+          - "Led a 3-person team refactoring Medidata Detect's legacy R anomaly-detection code into modular Python, raising test coverage from **~70% to ~85%**."
+          - "Maintained AWS EC2, S3, and Step Functions pipelines, cutting major bug fixes to **under an hour**."
+      - company: NCIRE | US Dept. of Veterans Affairs | UCSF
         position: Statistician
-        location: Remote (Bay Area, CA)
+        location: San Francisco, CA
         start_date: 2020-05
         end_date: 2021-11
         highlights:
-          - "Led statistical analysis of COPD progression outcomes on ICD-coded longitudinal EHR data with Cox, Kaplan-Meier, mixed-effects, and confounder-adjusted models; contributed to 2 publications."
-          - "Prototyped Random Forest and XGBoost models on COPD patient data, supported cohort definition and power calculations, and automated Excel ingestion and QC into MySQL."
-
+          - "Led statistical analysis of COPD progression with survival analysis and regression on ICD-9/10-coded longitudinal EHR data, contributing to **2 peer-reviewed publications**."
+          - "Automated file-by-file Excel ingestion and QC into a MySQL database, replacing manual per-file loading with direct SQL queries and removing a key data bottleneck for COPD research."
     education:
       - institution: University of California, Santa Cruz
         area: Applied Mathematics and Statistics
@@ -64,7 +58,7 @@ cv:
         location: Santa Cruz, CA
         end_date: 2019-12
       - institution: University of California, Santa Cruz
-        area: Applied Physics
+        area: Applied Physics (Minor in Electrical Engineering)
         degree: BS
         location: Santa Cruz, CA
         end_date: 2016-03
@@ -82,8 +76,4 @@ design:
 
 settings:
   bold_keywords:
-    - "first data scientist"
-    - "Earned adoption"
-    - "Medidata Detect"
-    - "COPD progression outcomes"
-    - "clinical trial risk-scoring module"
+    - "prescriptive"

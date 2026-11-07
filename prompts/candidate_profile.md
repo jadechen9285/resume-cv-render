@@ -1,6 +1,6 @@
 # Candidate Profile — Single Source of Truth
 
-**Owner:** Jianhong (JC) Chen · **Last verified:** 2026-10-28
+**Owner:** Jianhong (JC) Chen · **Last verified:** 2026-11-07
 
 This file is the only record of what is true about the candidate. The job search agent, the resume tailoring agent, cover letters, and interview prep all read from it. Resumes are *generated* from this file; they are never the source.
 
@@ -92,6 +92,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Local agentic PR-review system (see Project 6.2).
 - Prototyped RAG and embedding-based data schema matching with a Chroma vector store for internal use. Never finished or productionized.
 - Worked under HIPAA with de-identified data in approved environments.
+- **Statistical process control (SPC) exposure:** analyzed manufacturing QC data with an outside advisor; exploratory work that never became an official project. Confirmed 2026-11-07.
 
 **Metrics and their basis**
 
@@ -110,7 +111,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Developed Streamlit decision-support apps operationalizing simulation and forecasting outputs for planners, replacing a ~3-day manual Excel planning process with a ~3-hour review cycle.
 - Architected and deployed an on-prem agentic code-review system using Qwen-2.5-Coder-72B and vLLM on a 4× NVIDIA L20 cluster, cutting manual PR review time by ~80%.
 
-**Never say:** live A/B tests or randomized products in production (A/B tests were simulation-based only; see 6.1); realized or measured savings; service-level gain from forecasting alone; MILP or mixed-integer programming at Mindray; Bayesian optimization (planned, never done); a finished or production RAG system.
+**Never say:** an SPC project, deployed control charts, or owning QC monitoring at Mindray (exploratory work with an outside advisor only); live A/B tests or randomized products in production (A/B tests were simulation-based only; see 6.1); realized or measured savings; service-level gain from forecasting alone; MILP or mixed-integer programming at Mindray; Bayesian optimization (planned, never done); a finished or production RAG system.
 
 ### 4.2 Medidata Solutions — Senior Data Scientist (Promoted from Data Scientist)
 
@@ -160,7 +161,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Lead data analyst / statistician for the COPD project; trials and experiments were run by other team members.
 - Prototyped Random Forest and XGBoost models for some of the data modeling; these results were not published.
 - Used PCA, UMAP, and t-SNE frequently.
-- **Mass cytometry:** analyzed mass cytometry FCS files in R with flowCore and CATALYST; clustered cell populations with FlowSOM; used UMAP, t-SNE, and other dimensionality-reduction methods; produced volcano plots. Did not run the instrument or the wet-lab experiments.
+- **Mass cytometry:** analyzed mass cytometry FCS files in R with flowCore and CATALYST; clustered cell populations with FlowSOM; used UMAP, t-SNE, and other dimensionality-reduction methods; produced volcano plots to summarize group differences. Confirmed 2026-11-07. Not linked to the 2 publications (don't claim it was). Did not run the instrument or the wet-lab experiments.
 - COPD progression analysis on longitudinal EHR data: Cox proportional hazards, Kaplan–Meier, mixed-effects models (one analysis), OLS with confounder adjustment and collinearity checks. Statistical inference, not causal estimation.
 - Used both ICD-9 and ICD-10 codes for cohort and outcome definitions.
 - Helped (a little) define COPD cohorts: inclusion/exclusion criteria and outcomes.
@@ -300,6 +301,7 @@ No PhD. Gap Dec 2019 – May 2020 (after MS, COVID onset).
 | Planning cycle | "A planner used to spend about 3 days, with overtime, building the monthly plan in Excel. The framework generates the full report in about 3 minutes; we budget about 3 hours so planners can review and sign off." |
 | R → Python refactor | "I owned the codebase for Medidata Detect, our anomaly-detection application for clinical trial data. The R code was hard to maintain: a few small bugs a week, and the occasional big one took half a day to trace. We refactored it into modular, tested Python, raised coverage from about 70% to 85%, and most fixes after that took under an hour." |
 | KRI accuracy (on older resumes) | "I'd put less weight on that number. We never had a validated ground truth for site risk. What I stand behind is the rebuild: Poisson and negative binomial scoring on daily data, in production on AWS." |
+| SPC / quality data | "At Mindray I looked at manufacturing QC data with an outside advisor, applying SPC thinking to quality measurements. It stayed exploratory and never became an official project." |
 | Causal inference | "I've applied statistical inference with confounder adjustment; I know DiD and PSM conceptually but haven't run them on production data." |
 
 ---
@@ -332,6 +334,5 @@ Add new unconfirmed claims here before using them anywhere.
 Resolved on 2026-10-28: 2021-resume items (3 main projects + 2 small analyses; SVM tried only; MLP result is an internal prototype; RCT work is not A/B testing).
 
 
-- **Cytometry details (open 2026-10-28):** what the volcano plots compared (differential abundance or marker expression, and which test); whether this fed the 2 publications. Until confirmed, don't link cytometry to the publications.
 
 Resolved on 2026-10-25: live A/B tests (none; stakeholders declined), Bayesian optimization (planned only), Monte Carlo (robustness only), VA role (lead analyst/statistician), VA Random Forest / XGBoost (unpublished prototypes), fine-tuning (none; prompt engineering), PCA/UMAP/t-SNE and clustering, AWS EC2/S3/Step Functions, uv, basic ETL, Postgres (no), SAP (no), C++ (no), RAG (unfinished prototype), agentic orchestration (no), ~80% PR-review basis, NL-to-SQL model, status, and ~10% (relative, estimated).
