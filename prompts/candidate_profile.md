@@ -92,6 +92,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 - Local agentic PR-review system (see Project 6.2).
 - Prototyped RAG and embedding-based data schema matching with a Chroma vector store for internal use. Never finished or productionized.
 - Worked under HIPAA with de-identified data in approved environments.
+- **Award:** named company-wide Employee of the Year 2025 at Mindray (certificate and a small gold medal). Confirmed 2026-11-07.
 - **Statistical process control (SPC) exposure:** analyzed manufacturing QC data with an outside advisor; exploratory work that never became an official project. Confirmed 2026-11-07.
 
 **Metrics and their basis**
@@ -106,6 +107,7 @@ English (professional), Mandarin (professional), Cantonese (native).
 **Approved resume bullets**
 
 - Founded and led a 3-person data science team, defining the enterprise ML roadmap and translating ambiguous supply chain constraints into AI product strategy for executive leadership.
+- *Award (append to the team bullet or summary, not a separate section):* "named 2025 Employee of the Year (company-wide)". Don't mention the medal or certificate on a resume.
 - Engineered a stochastic discrete-event simulation framework in Python and Docker to model inventory uncertainty, cutting projected S&OP costs by $200K (15%) in backtesting.
 - Forecasted demand for 4,000+ SKUs with ARIMA, Prophet, and LSTM, powering an end-to-end planning system that raised backtested service levels from 85% to 93%.
 - Developed Streamlit decision-support apps operationalizing simulation and forecasting outputs for planners, replacing a ~3-day manual Excel planning process with a ~3-hour review cycle.
